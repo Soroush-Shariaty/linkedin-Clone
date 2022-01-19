@@ -24,3 +24,11 @@ a {
 * {
   box-sizing: border-box;
 }
+
+.section-padding {
+  padding: 0 100px;
+}
+
+.section-margin {
+  margin: 0 100px;
+}

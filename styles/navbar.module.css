@@ -1,0 +1,12 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 3px;
+}
+
+@media screen and (max-width: 1024px) {
+  .navbar {
+    justify-content: flex-start;
+  }
+}
