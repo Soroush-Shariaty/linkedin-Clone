@@ -1,0 +1,38 @@
+.searchbar {
+  display: flex;
+}
+
+.searchbar__img {
+  width: 35px;
+  height: 35px;
+  margin-right: 5px;
+}
+
+.searchbar__container {
+  max-width: 300px;
+  width: 100%;
+  background-color: #eef3f8;
+  padding: 5px 0px 5px 15px;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+}
+
+.searchbar__container_icon {
+  font-size: 20px;
+  color: var(--dark-gray);
+}
+
+.searchbar__container input {
+  width: 100%;
+  display: block;
+  outline: 0;
+  border: 0;
+  background-color: var(--light-gray);
+}
+
+@media screen and (max-width: 1024px) {
+  .searchbar__container {
+    display: none;
+  }
+}
