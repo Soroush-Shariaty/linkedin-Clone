@@ -1,0 +1,29 @@
+.navbarUser {
+  cursor: pointer;
+  color: var(--dark-gray);
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding: 0 15px 5px;
+  font-size: 13px;
+  line-height: 25px;
+}
+
+.navbarUser:hover {
+  color: var(--dark);
+}
+
+.navbarUser__image {
+  border-radius: 50%;
+}
+
+.navbarUser div {
+  display: flex;
+  align-items: center;
+}
+
+@media screen and (max-width: 855px) {
+  .navbarUser div {
+    display: none;
+  }
+}

@@ -32,3 +32,30 @@ a {
 .section-margin {
   margin: 0 100px;
 }
+
+@media screen and (max-width: 655px) {
+  .section-padding {
+    padding: 0 70px;
+  }
+  .section-margin {
+    margin: 0 70px;
+  }
+}
+
+@media screen and (max-width: 570px) {
+  .section-padding {
+    padding: 0 40px;
+  }
+  .section-margin {
+    margin: 0 40px;
+  }
+}
+
+@media screen and (max-width: 570px) {
+  .section-padding {
+    padding: 0px;
+  }
+  .section-margin {
+    margin: 0px;
+  }
+}

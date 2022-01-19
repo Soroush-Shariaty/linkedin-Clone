@@ -8,6 +8,7 @@ import {
 } from "react-icons/ai";
 import { BsPeopleFill } from "react-icons/bs";
 import { IoMdBriefcase } from "react-icons/io";
+import NavbarUser from "../../components/navbarUser/NavbarUser";
 
 const NavbarButtonContainer = () => {
   return (
@@ -30,6 +31,7 @@ const NavbarButtonContainer = () => {
       <NavbarButton title="Notification" isActive={false}>
         <AiFillBell />
       </NavbarButton>
+      <NavbarUser />
     </div>
   );
 };
