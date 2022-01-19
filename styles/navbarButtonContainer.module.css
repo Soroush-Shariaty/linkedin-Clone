@@ -1,0 +1,13 @@
+.navbarButtonContainer {
+  display: flex;
+}
+
+.navbarButtonContainer div:nth-child(1) {
+  display: none;
+}
+
+@media screen and (max-width: 1024px) {
+  .navbarButtonContainer div:nth-child(1) {
+    display: flex;
+  }
+}
