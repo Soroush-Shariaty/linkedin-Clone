@@ -6,9 +6,10 @@ import {
   AiFillBell,
   AiOutlineSearch,
 } from "react-icons/ai";
-import { BsPeopleFill } from "react-icons/bs";
+import { BsPeopleFill, BsThreeDots } from "react-icons/bs";
 import { IoMdBriefcase } from "react-icons/io";
 import NavbarUser from "../../components/navbarUser/NavbarUser";
+import NavbarWork from "../../components/navbarWork/NavbarWork";
 
 const NavbarButtonContainer = () => {
   return (
@@ -32,6 +33,10 @@ const NavbarButtonContainer = () => {
         <AiFillBell />
       </NavbarButton>
       <NavbarUser />
+      <NavbarWork />
+      <NavbarButton title="" isActive={false}>
+        <BsThreeDots />
+      </NavbarButton>
     </div>
   );
 };
