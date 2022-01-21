@@ -1,6 +1,6 @@
 import Image from "next/image";
-import profile from "../../public/images/User-img.jpg";
-import styles from "../../styles/navbarUser.module.css";
+import profile from "../../../public/images/User-img.jpg";
+import styles from "../../../styles/navbarStyles/navbarUser.module.css";
 import { BiChevronDown } from "react-icons/bi";
 const NavbarUser = () => {
   return (

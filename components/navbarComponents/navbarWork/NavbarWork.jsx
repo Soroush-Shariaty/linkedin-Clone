@@ -1,6 +1,6 @@
 import { BsFillGrid3X3GapFill } from "react-icons/bs";
 import { BiChevronDown } from "react-icons/bi";
-import styles from "../../styles/navbarWork.module.css";
+import styles from "../../../styles/navbarStyles/navbarWork.module.css";
 
 const NavbarWork = () => {
   return (

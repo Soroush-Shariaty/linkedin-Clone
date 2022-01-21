@@ -1,5 +1,5 @@
 import React from "react";
-import Navbar from "./../containers/navbar/Navbar";
+import Navbar from "./../containers/navbarContainers/navbar/Navbar";
 import BodyContainer from "./../containers/bodyContainer/BodyContainer";
 
 const HomePage = () => {

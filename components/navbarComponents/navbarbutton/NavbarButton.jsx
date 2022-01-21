@@ -1,4 +1,4 @@
-import styles from "../../styles/navbarbutton.module.css";
+import styles from "../../../styles/navbarStyles/navbarbutton.module.css";
 const NavbarButton = ({ isActive, children, title }) => {
   return (
     <div
