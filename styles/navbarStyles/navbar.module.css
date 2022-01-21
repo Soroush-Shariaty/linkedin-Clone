@@ -3,6 +3,8 @@
   justify-content: space-between;
   align-items: center;
   padding-top: 3px;
+  background-color: var(--white);
+  margin-bottom: 20px;
 }
 
 @media screen and (max-width: 1080px) {
