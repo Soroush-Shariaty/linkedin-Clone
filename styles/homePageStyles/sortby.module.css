@@ -1,0 +1,26 @@
+.sortby {
+  display: flex;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  align-items: center;
+}
+
+.sortby__hr {
+  width: 100%;
+  margin-right: 5px;
+}
+
+.sortby__title {
+  display: inline-block;
+  width: 60px;
+  font-size: 13px;
+}
+
+.sortby__dorp_down {
+  border: none;
+  outline: none;
+  cursor: pointer;
+  background-color: var(--gray);
+  font-family: Nunito-Bold;
+  font-size: 13px;
+}
