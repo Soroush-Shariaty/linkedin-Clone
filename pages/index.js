@@ -1,7 +1,11 @@
 import React from "react";
 import Navbar from "./../containers/navbarContainers/navbar/Navbar";
 import BodyContainer from "./../containers/bodyContainer/BodyContainer";
-import { Profile, Recent } from "../containers/homePageContainers/index";
+import {
+  Profile,
+  Recent,
+  StartPost,
+} from "../containers/homePageContainers/index";
 
 const HomePage = () => {
   return (
@@ -12,8 +16,8 @@ const HomePage = () => {
           <Profile />
           <Recent />
         </div>
-        <div style={{ backgroundColor: "red", border: "1px solid black" }}>
-          Soroush
+        <div>
+          <StartPost />
         </div>
         <div style={{ backgroundColor: "red", border: "1px solid black" }}>
           Soroush

@@ -1,0 +1,29 @@
+.startpostButton {
+  border: none;
+  outline: none;
+  padding: 10px 5px;
+  background-color: var(--white);
+  font-family: var(--font-heading);
+  border-radius: 2px;
+  color: var(--dark-gray);
+  display: flex;
+  justify-content: flex-start;
+  cursor: pointer;
+  align-items: center;
+}
+
+.startpostButton:hover {
+  background-color: var(--gray);
+}
+
+.startpostButton div {
+  margin-right: 10px;
+  font-size: 25px;
+  display: flex;
+  align-items: center;
+}
+
+.startpostButton p {
+  margin: 0;
+  font-size: 13px;
+}
