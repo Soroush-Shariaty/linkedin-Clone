@@ -7,16 +7,19 @@
 .bodyContainer__side_left {
   flex: 0.22;
   width: 100%;
+  margin-right: 5px;
 }
 
 .bodyContainer__main {
   flex: 0.5;
   width: 100%;
+  margin: 0 5px;
 }
 
 .bodyContainer__side_right {
   flex: 0.28;
   width: 100%;
+  margin-left: 5px;
 }
 
 .bodyContainer__section_left {

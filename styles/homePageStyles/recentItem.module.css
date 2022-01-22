@@ -1,0 +1,26 @@
+.recentItem {
+  color: var(--dark-gray);
+  font-size: 13px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.recentItem:hover {
+  background-color: var(--gray);
+  color: var(--dark);
+  margin-left: -10px;
+  margin-right: -10px;
+  cursor: pointer;
+}
+.recentItem__container {
+  display: flex;
+  align-items: center;
+}
+.recentItem__container svg {
+  margin-right: 5px;
+}
+
+.recentItem:hover .recentItem__container {
+  margin-left: 10px;
+  margin-right: 10px;
+}
