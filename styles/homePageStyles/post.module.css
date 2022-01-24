@@ -51,14 +51,22 @@
   padding-bottom: 5px;
 }
 
-.post-controls__btn {
-  width: 24%;
-  background-color: var(--white);
-  margin: 0;
-  border: none;
-  color: var(--dark-gray);
+.post__feedback {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 14px;
 }
 
-.post-controls__btn--icon {
-  font-size: 20px;
+.likes__info {
+  display: flex;
+  align-items: center;
+}
+
+.likes__info:first-child {
+  color: var(--blue);
+}
+
+.likes__info span {
+  color: var(--dark-gray);
 }

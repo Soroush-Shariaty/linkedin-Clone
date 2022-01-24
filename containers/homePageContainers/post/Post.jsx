@@ -45,9 +45,9 @@ const Post = () => {
       <div className={styles.post__img}>
         <Image src={postImg} alt="" />
       </div>
-      <div>
-        <div>
-          <FaRegThumbsUp />
+      <div className={styles.post__feedback}>
+        <div className={styles.likes__info}>
+          <MdThumbUpAlt />
           <span>10</span>
         </div>
         <div>
