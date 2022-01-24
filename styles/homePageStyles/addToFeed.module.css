@@ -1,0 +1,58 @@
+.addtofeed {
+  background-color: var(--white);
+  padding: 10px;
+  border-radius: 10px;
+  overflow: hidden;
+  border: 1px solid var(--gray);
+  margin-bottom: 10px;
+  outline: 0;
+}
+
+.addtofeed__title {
+  margin-top: 0;
+}
+
+.addtofeed__suggest {
+  margin-bottom: 10px;
+}
+
+.addtofeed__suggest__btn {
+  width: 95px;
+  margin: 5px 0;
+  display: block;
+  border-radius: 20px;
+  padding: 10px 10px;
+  border: 1px solid var(--dark-gray);
+  background-color: var(--white);
+}
+
+.addtofeed__suggest__btn_icon {
+  margin-right: 5px;
+}
+
+.today-courses {
+  background-color: var(--white);
+  padding: 10px;
+  border-radius: 10px;
+  overflow: hidden;
+  border: 1px solid var(--gray);
+  margin-bottom: 10px;
+}
+
+.today-courses__link {
+  color: var(--dark);
+  display: block;
+  margin-bottom: 10px;
+}
+
+.today-courses__link-title {
+  margin: 0;
+  font-size: 15px;
+}
+
+.today-courses__link-author {
+  font-size: 12px;
+  margin-left: 16px;
+  margin-top: 5px;
+  margin-bottom: 0;
+}

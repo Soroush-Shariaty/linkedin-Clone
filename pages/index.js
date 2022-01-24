@@ -7,6 +7,7 @@ import {
   Recent,
   StartPost,
   Post,
+  AddToFeed,
 } from "../containers/homePageContainers/index";
 
 const HomePage = () => {
@@ -23,8 +24,8 @@ const HomePage = () => {
           <Sortby />
           <Post />
         </div>
-        <div style={{ backgroundColor: "red", border: "1px solid black" }}>
-          Soroush
+        <div>
+          <AddToFeed />
         </div>
       </BodyContainer>
     </div>
