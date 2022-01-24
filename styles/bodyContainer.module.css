@@ -1,7 +1,6 @@
 .bodyContainer {
   display: flex;
   flex-direction: row;
-  background-color: var(--gray);
 }
 
 .bodyContainer__side_left {

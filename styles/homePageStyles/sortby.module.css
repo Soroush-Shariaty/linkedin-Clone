@@ -20,7 +20,7 @@
   border: none;
   outline: none;
   cursor: pointer;
-  background-color: var(--gray);
+  background-color: var(--light-gray);
   font-family: Nunito-Bold;
   font-size: 13px;
 }

@@ -9,6 +9,7 @@ import {
   Post,
   AddToFeed,
 } from "../containers/homePageContainers/index";
+import DreamJob from "../containers/homePageContainers/dreamJob/DreamJob";
 
 const HomePage = () => {
   return (
@@ -26,6 +27,7 @@ const HomePage = () => {
         </div>
         <div>
           <AddToFeed />
+          <DreamJob />
         </div>
       </BodyContainer>
     </div>
