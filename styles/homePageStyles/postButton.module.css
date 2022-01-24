@@ -1,4 +1,4 @@
-.startpostButton {
+.postButton {
   border: none;
   outline: none;
   padding: 10px 5px;
@@ -6,23 +6,25 @@
   font-family: var(--font-heading);
   color: var(--dark-gray);
   display: flex;
-  justify-content: flex-start;
   cursor: pointer;
   align-items: center;
+  width: 25%;
+  justify-content: center;
 }
 
-.startpostButton:hover {
+.postButton:hover {
   background-color: var(--gray);
 }
 
-.startpostButton div {
+.postButton div {
   margin-right: 10px;
   font-size: 25px;
   display: flex;
   align-items: center;
+  color: var(--dark-gray);
 }
 
-.startpostButton p {
+.postButton p {
   margin: 0;
-  font-size: 13px;
+  font-size: 15px;
 }

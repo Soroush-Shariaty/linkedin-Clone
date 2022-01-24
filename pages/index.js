@@ -6,6 +6,7 @@ import {
   Profile,
   Recent,
   StartPost,
+  Post,
 } from "../containers/homePageContainers/index";
 
 const HomePage = () => {
@@ -20,6 +21,7 @@ const HomePage = () => {
         <div>
           <StartPost />
           <Sortby />
+          <Post />
         </div>
         <div style={{ backgroundColor: "red", border: "1px solid black" }}>
           Soroush
