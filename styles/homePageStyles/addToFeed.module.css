@@ -56,3 +56,27 @@
   margin-top: 5px;
   margin-bottom: 0;
 }
+
+.addtofeed__recommLink {
+  display: inline-block;
+  align-items: center;
+  color: var(--dark-gray);
+  font-family: var(--font-heading);
+  font-size: 13px;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+.addtofeed__recommLink:hover {
+  background-color: var(--gray);
+}
+
+.addtofeed__recommLink_container {
+  display: flex;
+  align-items: center;
+}
+
+.addtofeed__recommLink_container span {
+  display: block;
+  margin-right: 5px;
+}
