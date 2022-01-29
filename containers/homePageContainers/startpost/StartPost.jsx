@@ -1,3 +1,4 @@
+import { useState } from "react";
 import Image from "next/image";
 import {
   AiFillPicture,
@@ -8,10 +9,16 @@ import {
 import { StartpostButton } from "../../../components/homePageComponents/index";
 import styles from "../../../styles/homePageStyles/startpost.module.css";
 import userPic from "../../../public/images/User-img.jpg";
+import StartPostPhotoModal from "../../../modals/homePageModals/startPostPhotoModal/StartPostPhotoModal";
 
 const StartPost = () => {
+  const [isModalOpen, setIsModalOpen] = useState(true);
   return (
     <div className={styles.startPost}>
+      <StartPostPhotoModal
+        isOpen={isModalOpen}
+        closeModal={() => setIsModalOpen(false)}
+      />
       <div style={{ display: "flex", marginBottom: "10px" }}>
         <div className={styles.startPost__user_img_container}>
           <Image
@@ -24,7 +31,11 @@ const StartPost = () => {
         <button className={styles.startPost__btn}>Start a post</button>
       </div>
       <div style={{ display: "flex", justifyContent: "space-between" }}>
-        <StartpostButton text="Photo" color="#70b5f9">
+        <StartpostButton
+          text="Photo"
+          color="#70b5f9"
+          action={() => setIsModalOpen(true)}
+        >
           <AiFillPicture />
         </StartpostButton>
         <StartpostButton text="Video" color="#7fc15e">
