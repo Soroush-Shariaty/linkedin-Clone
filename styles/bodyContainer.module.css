@@ -24,11 +24,13 @@
 .bodyContainer__section_left {
   flex: 0.3;
   width: 100%;
+  margin-right: 5px;
 }
 
 .bodyContainer__section_right {
   flex: 0.7;
   width: 100%;
+  margin-left: 5px;
 }
 
 @media screen and (max-width: 1080px) {

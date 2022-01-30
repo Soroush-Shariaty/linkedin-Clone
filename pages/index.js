@@ -1,4 +1,3 @@
-import React from "react";
 import Navbar from "./../containers/navbarContainers/navbar/Navbar";
 import BodyContainer from "./../containers/bodyContainer/BodyContainer";
 import { Sortby } from "../components/homePageComponents/index";
@@ -10,11 +9,12 @@ import {
   AddToFeed,
 } from "../containers/homePageContainers/index";
 import DreamJob from "../containers/homePageContainers/dreamJob/DreamJob";
+import { activeClass } from "./../utils/activeClassEnum";
 
 const HomePage = () => {
   return (
     <div>
-      <Navbar />
+      <Navbar active={activeClass.home} />
       <BodyContainer>
         <div>
           <Profile />

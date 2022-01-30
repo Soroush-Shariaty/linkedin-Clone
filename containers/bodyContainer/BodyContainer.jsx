@@ -17,7 +17,7 @@ const BodyContainer = ({ children }) => {
     );
   } else {
     return (
-      <div className={styles.bodyContainer}>
+      <div className={[styles.bodyContainer, "section-padding"].join(" ")}>
         <div className={styles.bodyContainer__section_left}>
           {childrenArray[0]}
         </div>

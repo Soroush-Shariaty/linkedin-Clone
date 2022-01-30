@@ -12,31 +12,40 @@ import {
   NavbarWork,
 } from "../../../components/navbarComponents/index";
 import styles from "./../../../styles/navbarStyles/navbarButtonContainer.module.css";
+import { activeClass } from "./../../../utils/activeClassEnum";
 
-const NavbarButtonContainer = () => {
+const NavbarButtonContainer = ({ active }) => {
   return (
     <div className={styles.navbarButtonContainer}>
-      <NavbarButton title="Search" isActive={false}>
+      <NavbarButton title="Search" isActive={false} href="/mynetwork">
         <AiOutlineSearch />
       </NavbarButton>
-      <NavbarButton title="Home" isActive={true}>
+      <NavbarButton
+        title="Home"
+        isActive={active === activeClass.home ? true : false}
+        href="/"
+      >
         <AiFillHome />
       </NavbarButton>
-      <NavbarButton title="My Network" isActive={false}>
+      <NavbarButton
+        title="My Network"
+        isActive={active === activeClass.myNetwork ? true : false}
+        href="/mynetwork"
+      >
         <BsPeopleFill />
       </NavbarButton>
-      <NavbarButton title="Jobs" isActive={false}>
+      <NavbarButton title="Jobs" isActive={false} href="/mynetwork">
         <IoMdBriefcase />
       </NavbarButton>
-      <NavbarButton title="Message" isActive={false}>
+      <NavbarButton title="Message" isActive={false} href="/mynetwork">
         <AiFillMessage />
       </NavbarButton>
-      <NavbarButton title="Notification" isActive={false}>
+      <NavbarButton title="Notification" isActive={false} href="/mynetwork">
         <AiFillBell />
       </NavbarButton>
       <NavbarUser />
       <NavbarWork />
-      <NavbarButton title="" isActive={false}>
+      <NavbarButton title="" isActive={false} href="/mynetwork">
         <BsThreeDots />
       </NavbarButton>
     </div>

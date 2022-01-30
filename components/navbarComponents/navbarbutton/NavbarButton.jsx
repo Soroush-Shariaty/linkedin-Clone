@@ -1,16 +1,19 @@
+import Link from "next/link";
 import styles from "../../../styles/navbarStyles/navbarbutton.module.css";
-const NavbarButton = ({ isActive, children, title }) => {
+const NavbarButton = ({ isActive, children, title, href }) => {
   return (
-    <div
-      className={
-        isActive
-          ? [styles.navbarButton, styles.active].join(" ")
-          : styles.navbarButton
-      }
-    >
-      <span>{children}</span>
-      <span>{title}</span>
-    </div>
+    <Link href={href} passHref>
+      <div
+        className={
+          isActive
+            ? [styles.navbarButton, styles.active].join(" ")
+            : styles.navbarButton
+        }
+      >
+        <span>{children}</span>
+        <span>{title}</span>
+      </div>
+    </Link>
   );
 };
 
