@@ -1,0 +1,98 @@
+.startPostVideoModal {
+  width: 500px;
+  margin: 0 auto;
+  margin-top: 40px;
+  background-color: var(--white);
+  border: 1px solid var(--dark-gray);
+  border-radius: 10px;
+  color: var(--dark-gray);
+}
+
+.startPostVideoModal p {
+  margin: 0;
+  padding: 0;
+  font-size: 20px;
+}
+
+.startPostVideoModal__headingContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px;
+}
+
+.startPostVideoModal__xbutton {
+  font-size: 25px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  padding: 5px;
+  cursor: pointer;
+}
+
+.startPostVideoModal__videoContainer {
+  position: relative;
+  height: 300px;
+}
+
+.startPostVideoModal__videoContainer__video {
+  width: 100%;
+}
+
+.startPostVideoModal__xbutton:hover {
+  background-color: var(--gray);
+}
+
+.startPostVideoModal__selectImage {
+  display: flex;
+  justify-content: center;
+  padding: 60px 0;
+  border-top: 1px solid var(--gray);
+  border-bottom: 1px solid var(--gray);
+}
+
+.startPostVideoModal__selectImage label {
+  font-family: var(--font-heading);
+  padding: 5px;
+  border-radius: 5px;
+  cursor: pointer;
+  color: var(--blue);
+}
+
+.startPostVideoModal__selectImage label:hover {
+  background-color: var(--light-blue);
+}
+
+.startPostVideoModal__buttonsContainer {
+  display: flex;
+  justify-content: flex-end;
+  padding: 15px;
+}
+
+.startPostVideoModal__button {
+  background-color: var(--white);
+  outline: 0;
+  border: 1px solid var(--blue);
+  font-family: var(--font-heading);
+  color: var(--blue);
+  font-size: 15px;
+  padding: 5px 15px;
+  width: 80px;
+  border-radius: 15px;
+  cursor: pointer;
+}
+
+.active:hover {
+  background-color: var(--light-blue);
+}
+
+.deactive {
+  color: var(--gray);
+  border: 0;
+  outline: auto;
+  cursor: default;
+}
+
+.startPostVideoModal__button:first-of-type {
+  margin-right: 10px;
+}

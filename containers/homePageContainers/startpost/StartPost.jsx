@@ -9,15 +9,23 @@ import {
 import { StartpostButton } from "../../../components/homePageComponents/index";
 import styles from "../../../styles/homePageStyles/startpost.module.css";
 import userPic from "../../../public/images/User-img.jpg";
-import StartPostPhotoModal from "../../../modals/homePageModals/startPostPhotoModal/StartPostPhotoModal";
+import {
+  StartPostPhotoModal,
+  StartPostVideoModal,
+} from "../../../modals/homePageModals/index";
 
 const StartPost = () => {
-  const [isModalOpen, setIsModalOpen] = useState(true);
+  const [isPhotoModalOpen, setisPhotoModalOpen] = useState(false);
+  const [isVideoModalOpen, setisVideoModalOpen] = useState(false);
   return (
     <div className={styles.startPost}>
       <StartPostPhotoModal
-        isOpen={isModalOpen}
-        closeModal={() => setIsModalOpen(false)}
+        isOpen={isPhotoModalOpen}
+        closeModal={() => setisPhotoModalOpen(false)}
+      />
+      <StartPostVideoModal
+        isOpen={isVideoModalOpen}
+        closeModal={() => setisVideoModalOpen(false)}
       />
       <div style={{ display: "flex", marginBottom: "10px" }}>
         <div className={styles.startPost__user_img_container}>
@@ -34,11 +42,15 @@ const StartPost = () => {
         <StartpostButton
           text="Photo"
           color="#70b5f9"
-          action={() => setIsModalOpen(true)}
+          action={() => setisPhotoModalOpen(true)}
         >
           <AiFillPicture />
         </StartpostButton>
-        <StartpostButton text="Video" color="#7fc15e">
+        <StartpostButton
+          text="Video"
+          color="#7fc15e"
+          action={() => setisVideoModalOpen(true)}
+        >
           <AiFillPlaySquare />
         </StartpostButton>
         <StartpostButton text="Event" color="#e7a33e">
