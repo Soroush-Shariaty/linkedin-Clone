@@ -1,14 +1,15 @@
 import Navbar from "./../containers/navbarContainers/navbar/Navbar";
 import BodyContainer from "./../containers/bodyContainer/BodyContainer";
 import { activeClass } from "./../utils/activeClassEnum";
+import ManageNetwork from "../containers/myNetworkPageContainers/manageNetwork/ManageNetwork";
 
-const HomePage = () => {
+const MyNetworkPage = () => {
   return (
     <div>
       <Navbar active={activeClass.myNetwork} />
       <BodyContainer>
-        <div style={{ backgroundColor: "red", border: "1px solid black" }}>
-          Soroush
+        <div>
+          <ManageNetwork />
         </div>
         <div style={{ backgroundColor: "red", border: "1px solid black" }}>
           Soroush
@@ -18,4 +19,4 @@ const HomePage = () => {
   );
 };
 
-export default HomePage;
+export default MyNetworkPage;

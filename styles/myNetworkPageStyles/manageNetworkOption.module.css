@@ -1,0 +1,36 @@
+.manageNetworkOption {
+  width: 100%;
+  cursor: pointer;
+  color: var(--dark-gray);
+  padding: 10px 0;
+}
+
+.manageNetworkOption:hover {
+  background-color: var(--gray);
+}
+
+.manageNetworkOption__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 17px;
+  margin: 0 15px;
+}
+
+.manageNetworkOption__container p {
+  padding: 0;
+  margin: 0;
+}
+
+.manageNetworkOption__container__icon_container {
+  display: flex;
+  align-items: center;
+  font-size: 17px;
+}
+
+.manageNetworkOption__container__icon_container div {
+  display: flex;
+  align-items: center;
+  font-size: 22px;
+  margin-right: 10px;
+}

@@ -1,0 +1,87 @@
+.manageNetwork {
+  background-color: var(--white);
+  border-radius: 10px;
+  padding: 10px 0;
+}
+
+.manageNetwork p:first-child {
+  padding: 0;
+  margin: 0;
+  margin-left: 10px;
+  color: var(--dark);
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.manageNetwork__options_container {
+  border-bottom: 1px solid var(--gray);
+}
+
+.manageNetwork__image_container {
+  position: relative;
+  padding: 10px;
+  height: fit-content;
+}
+
+.manageNetwork__addContact_container {
+  border-top: 1px solid var(--gray);
+}
+
+.manageNetwork__addContact_container p {
+  font-size: 12px;
+  margin: 10px;
+}
+.manageNetwork__addContact_container p:first-child {
+  font-size: 16px;
+  text-align: center;
+  margin-top: 10px;
+}
+
+.manageNetwork__addContact_container_learn_more {
+  cursor: pointer;
+  color: var(--blue);
+}
+
+.manageNetwork__input_container {
+  margin: 0 10px;
+}
+
+.manageNetwork__input_container input {
+  display: block;
+  width: 100%;
+  border-radius: 5px;
+  padding: 10px;
+  border: 1px solid var(--dark-gray);
+}
+
+.manageNetwork__addContact_container button {
+  background-color: transparent;
+  border-radius: 20px;
+  border: 1px solid var(--blue);
+  outline: 0;
+  color: var(--blue);
+  padding: 10px;
+  cursor: pointer;
+  font-size: 15px;
+  font-family: var(--font-heading);
+  display: block;
+  margin: 10px auto;
+}
+
+.manageNetwork__addContact_container button:hover {
+  background-color: var(--light-blue);
+}
+
+.manageNetwork__addContact_container_learn_more:hover {
+  text-decoration: underline;
+}
+
+.manageNetwork__addContact_container_learn_more:visited {
+  color: blueviolet;
+}
+
+.manageNetwork__addContact_container_link {
+  font-size: 14px;
+  display: block;
+  margin: 0 auto;
+}
