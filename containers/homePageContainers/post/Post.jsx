@@ -38,7 +38,7 @@ const Post = () => {
           </span>
         </div>
       </div>
-      <p>
+      <p className={styles.post__text}>
         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus,
         officiis.
       </p>
@@ -46,12 +46,12 @@ const Post = () => {
         <Image src={postImg} alt="" />
       </div>
       <div className={styles.post__feedback}>
-        <div className={styles.likes__info}>
+        <div className={styles.post__likes_info}>
           <MdThumbUpAlt />
           <span>10</span>
         </div>
         <div>
-          <span>4 comment</span>
+          <span className={styles.post__comment_info}>4 comment</span>
         </div>
       </div>
       <hr />

@@ -10,7 +10,7 @@
 
 .searchbar__container {
   width: 300px;
-  background-color: #eef3f8;
+  background-color: var(--light-blue);
   padding: 5px 0px 5px 15px;
   border-radius: 5px;
   display: flex;
@@ -27,7 +27,11 @@
   display: block;
   outline: 0;
   border: 0;
-  background-color: var(--light-gray);
+  background-color: var(--light-blue);
+}
+
+.searchbar__container input::placeholder {
+  color: var(--dark-gray);
 }
 
 @media screen and (max-width: 1080px) {

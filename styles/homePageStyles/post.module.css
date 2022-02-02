@@ -33,6 +33,7 @@
   margin-left: 10px;
   font-size: 14px;
   font-family: var(--font-heading);
+  color: var(--dark);
 }
 
 .post__owner_info span:nth-child(2),
@@ -58,15 +59,22 @@
   font-size: 14px;
 }
 
-.likes__info {
+.post__text {
+  color: var(--dark);
+}
+
+.post__likes_info {
   display: flex;
   align-items: center;
 }
 
-.likes__info:first-child {
+.post__likes_info:first-child {
   color: var(--blue);
 }
 
-.likes__info span {
+.post__likes_info span {
+  color: var(--dark-gray);
+}
+.post__comment_info {
   color: var(--dark-gray);
 }

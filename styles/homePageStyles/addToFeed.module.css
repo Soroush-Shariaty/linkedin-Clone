@@ -10,6 +10,7 @@
 
 .addtofeed__title {
   margin-top: 0;
+  color: var(--dark);
 }
 
 .addtofeed__suggest {

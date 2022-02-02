@@ -18,7 +18,7 @@
 }
 
 .active {
-  border-bottom: 2px solid #000;
+  border-bottom: 2px solid var(--dark);
   color: var(--dark);
 }
 

@@ -4,8 +4,19 @@
   --light-gray: #f3f2ef;
   --dark-gray: #666666;
   --blue: #0a66c2;
-  --light-blue:#E2F0FE;
+  --light-blue: #e2f0fe;
   --gray: #e0dfdc;
+  --font-text: Nunito-Regular;
+  --font-heading: Nunito-Bold;
+}
+[data-theme="dark"] {
+  --dark: #ffd700;
+  --white: #191919;
+  --light-gray: #202124;
+  --dark-gray: #dfaf37;
+  --blue: #dfaf37;
+  --light-blue: #292929;
+  --gray: #292929;
   --font-text: Nunito-Regular;
   --font-heading: Nunito-Bold;
 }
@@ -21,6 +32,10 @@ body {
 a {
   color: inherit;
   text-decoration: none;
+}
+
+hr {
+  border: 1px solid var(--gray);
 }
 
 * {

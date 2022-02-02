@@ -7,6 +7,11 @@
   margin-bottom: 20px;
 }
 
+.navbar__searchbar_container {
+  display: flex;
+  align-items: center;
+}
+
 @media screen and (max-width: 1080px) {
   .navbar {
     justify-content: flex-start;
