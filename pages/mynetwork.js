@@ -2,6 +2,7 @@ import Navbar from "./../containers/navbarContainers/navbar/Navbar";
 import BodyContainer from "./../containers/bodyContainer/BodyContainer";
 import { activeClass } from "./../utils/activeClassEnum";
 import ManageNetwork from "../containers/myNetworkPageContainers/manageNetwork/ManageNetwork";
+import PendingInvitations from "./../containers/myNetworkPageContainers/pendingInvitations/PendingInvitations";
 
 const MyNetworkPage = () => {
   return (
@@ -11,8 +12,8 @@ const MyNetworkPage = () => {
         <div>
           <ManageNetwork />
         </div>
-        <div style={{ backgroundColor: "red", border: "1px solid black" }}>
-          Soroush
+        <div>
+          <PendingInvitations />
         </div>
       </BodyContainer>
     </div>

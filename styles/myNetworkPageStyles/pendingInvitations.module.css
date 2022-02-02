@@ -1,0 +1,22 @@
+.pendingInvitations {
+  background-color: var(--white);
+  padding: 0 10px;
+  border-radius: 10px;
+  border: 1px solid var(--gray);
+  outline: 0;
+  border-bottom: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: var(--dark);
+}
+
+.pendingInvitations div {
+  color: var(--dark);
+  padding: 5px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.pendingInvitations div:hover {
+  background-color: var(--gray);
+}
