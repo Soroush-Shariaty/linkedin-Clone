@@ -1,7 +1,8 @@
 import Image from "next/image";
+import { FaPlus } from "react-icons/fa";
+
 import styles from "../../../styles/homePageStyles/addToFeedSuggest.module.css";
 import userImg from "../../../public/images/User-img.jpg";
-import { FaPlus } from "react-icons/fa";
 
 const AddToFeedSuggest = () => {
   return (

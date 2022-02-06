@@ -1,5 +1,7 @@
-import styles from "../../../styles/homePageStyles/recentItem.module.css";
 import Link from "next/link";
+
+import styles from "../../../styles/homePageStyles/recentItem.module.css";
+
 const RecentItem = ({ children, href, text }) => {
   return (
     <div className={styles.recentItem}>

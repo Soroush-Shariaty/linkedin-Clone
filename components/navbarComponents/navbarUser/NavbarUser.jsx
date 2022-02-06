@@ -1,7 +1,7 @@
 import Image from "next/image";
+import { BiChevronDown } from "react-icons/bi";
 import profile from "../../../public/images/User-img.jpg";
 import styles from "../../../styles/navbarStyles/navbarUser.module.css";
-import { BiChevronDown } from "react-icons/bi";
 const NavbarUser = () => {
   return (
     <div className={styles.navbarUser}>

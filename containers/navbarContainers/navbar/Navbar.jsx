@@ -1,4 +1,4 @@
-import NavbarButtonContainer from "../navbarButtonContainer/NavbarButtonContainer";
+import { NavbarButtonContainer } from "../index";
 import {
   Searchbar,
   ToggleDarkMode,

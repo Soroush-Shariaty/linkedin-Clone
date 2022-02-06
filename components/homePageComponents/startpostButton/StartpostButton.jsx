@@ -1,4 +1,5 @@
 import styles from "../../../styles/homePageStyles/startpostButton.module.css";
+
 const StartpostButton = ({ children, text, color, action }) => {
   return (
     <button className={styles.startpostButton} onClick={action}>

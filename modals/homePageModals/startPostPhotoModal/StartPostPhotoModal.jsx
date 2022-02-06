@@ -1,8 +1,8 @@
 import Modal from "react-modal";
 import { AiOutlineClose } from "react-icons/ai";
-import styles from "../../../styles/modals/homePageModals/startPostPhotoModal.module.css";
 import { useState } from "react";
 import Image from "next/image";
+import styles from "../../../styles/modals/homePageModals/startPostPhotoModal.module.css";
 
 const StartPostPhotoModal = ({ isOpen, closeModal }) => {
   const [file, setfile] = useState("");

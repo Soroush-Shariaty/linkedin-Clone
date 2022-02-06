@@ -1,8 +1,8 @@
 import ManageNetworkOptionContainer from "./../manageNetworkOptionContainer/ManageNetworkOptionContainer";
 import Image from "next/image";
+import Link from "next/link";
 import styles from "../../../styles/myNetworkPageStyles/manageNetwork.module.css";
 import img from "../../../public/images/dreamJob.jpg";
-import Link from "next/link";
 const ManageNetwork = () => {
   return (
     <div className={styles.manageNetwork}>

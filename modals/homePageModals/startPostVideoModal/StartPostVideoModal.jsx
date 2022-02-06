@@ -1,7 +1,7 @@
 import Modal from "react-modal";
 import { AiOutlineClose } from "react-icons/ai";
-import styles from "../../../styles/modals/homePageModals/startPostVideoModal.module.css";
 import { useState } from "react";
+import styles from "../../../styles/modals/homePageModals/startPostVideoModal.module.css";
 
 const StartPostVideoModal = ({ isOpen, closeModal }) => {
   const [file, setfile] = useState("");

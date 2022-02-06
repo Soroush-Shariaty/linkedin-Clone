@@ -1,7 +1,7 @@
-import { RecentItem } from "../../../components/homePageComponents/index";
-import { FaUserFriends } from "react-icons/fa";
-import styles from "../../../styles/homePageStyles/recent.module.css";
 import Link from "next/link";
+import { FaUserFriends } from "react-icons/fa";
+import { RecentItem } from "../../../components/homePageComponents/index";
+import styles from "../../../styles/homePageStyles/recent.module.css";
 
 const Recent = () => {
   return (

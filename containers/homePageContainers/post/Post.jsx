@@ -1,3 +1,4 @@
+import Image from "next/image";
 import {
   FaRegThumbsUp,
   FaRegCommentDots,
@@ -10,7 +11,6 @@ import styles from "../../../styles/homePageStyles/post.module.css";
 import userImg from "../../../public/images/User-img.jpg";
 import postImg from "../../../public/images/post-pic.jpg";
 import PostButton from "../../../components/homePageComponents/postButton/postButton";
-import Image from "next/image";
 
 const Post = () => {
   return (

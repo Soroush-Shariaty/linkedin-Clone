@@ -1,4 +1,3 @@
-import { ManageNetworkOption } from "../../../components/myNetworkPageComponents/index";
 import { BsPeopleFill, BsHash } from "react-icons/bs";
 import {
   AiFillContacts,
@@ -8,6 +7,8 @@ import {
   AiOutlineSnippets,
   AiOutlineSchedule,
 } from "react-icons/ai";
+import { ManageNetworkOption } from "../../../components/myNetworkPageComponents/index";
+
 const ManageNetworkOptionContainer = () => {
   return (
     <>

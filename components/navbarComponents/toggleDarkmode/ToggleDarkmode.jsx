@@ -1,7 +1,7 @@
-import styles from "../../../styles/navbarStyles/toggleDarkmode.module.css";
 import { useEffect, useState } from "react";
 import { useTheme } from "next-themes";
 import { BsFillSunFill, BsFillMoonFill } from "react-icons/bs";
+import styles from "../../../styles/navbarStyles/toggleDarkmode.module.css";
 
 const ToggleDarkmode = () => {
   let matched = false;
