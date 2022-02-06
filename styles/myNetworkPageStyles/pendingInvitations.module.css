@@ -9,6 +9,7 @@
   justify-content: space-between;
   align-items: center;
   color: var(--dark);
+  margin-bottom: 10px;
 }
 
 .pendingInvitations div {

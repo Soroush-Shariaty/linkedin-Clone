@@ -1,8 +1,8 @@
 import Image from "next/image";
+import Link from "next/link";
 import styles from "../../../styles/homePageStyles/profile.module.css";
 import userImage from "../../../public/images/User-img.jpg";
 import bgImage from "../../../public/images/Background.jpg";
-import Link from "next/link";
 const Profile = () => {
   return (
     <div className={styles.profile}>

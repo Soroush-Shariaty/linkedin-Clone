@@ -3,6 +3,7 @@ import BodyContainer from "./../containers/bodyContainer/BodyContainer";
 import { activeClass } from "./../utils/activeClassEnum";
 import ManageNetwork from "../containers/myNetworkPageContainers/manageNetwork/ManageNetwork";
 import PendingInvitations from "./../containers/myNetworkPageContainers/pendingInvitations/PendingInvitations";
+import YouMayKnow from "../containers/myNetworkPageContainers/youMayKnow/YouMayKnow";
 
 const MyNetworkPage = () => {
   return (
@@ -14,6 +15,7 @@ const MyNetworkPage = () => {
         </div>
         <div>
           <PendingInvitations />
+          <YouMayKnow />
         </div>
       </BodyContainer>
     </div>

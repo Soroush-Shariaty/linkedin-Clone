@@ -1,0 +1,47 @@
+.youMayKnow {
+  background-color: var(--white);
+  padding: 0 10px;
+  border-radius: 10px;
+  border: 1px solid var(--gray);
+  outline: 0;
+  border-bottom: 10px;
+  color: var(--dark);
+}
+
+.youMayKnow__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.youMayKnow__header button {
+  color: var(--dark);
+  padding: 5px;
+  border-radius: 5px;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  background-color: transparent;
+  font-family: var(--font-text);
+  font-size: 16px;
+}
+.youMayKnow__header button:hover {
+  background-color: var(--gray);
+}
+
+.youMayKnow__connectSuggestionTiles {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 10px;
+}
+
+@media screen and (max-width: 1095px) {
+  .youMayKnow__connectSuggestionTiles {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media screen and (max-width: 600px) {
+  .youMayKnow__connectSuggestionTiles {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}

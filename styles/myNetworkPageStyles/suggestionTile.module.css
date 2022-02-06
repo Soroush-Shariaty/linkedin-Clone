@@ -1,0 +1,82 @@
+.suggestionTile {
+  background-color: var(--white);
+  border: 1px solid var(--gray);
+  border-radius: 10px;
+  overflow: hidden;
+  margin-bottom: 10px;
+  position: relative;
+}
+
+.suggestionTile:hover {
+  border: 1px solid var(--dark-gray);
+}
+
+.suggestionTile__background_img_container {
+  position: relative;
+  height: 70px;
+}
+
+.suggestionTile__user_img_container {
+  margin-top: -35px;
+  display: flex;
+  justify-content: center;
+  width: 100px;
+  height: 100px;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.suggestionTile__user_img {
+  border-radius: 50%;
+}
+
+.suggestionTile__user_name:hover .profile__user_name_text {
+  text-decoration: underline;
+}
+
+.suggestionTile__user_name_text {
+  text-align: center;
+  margin-bottom: 0;
+  margin-top: 20px;
+}
+
+.suggestionTile__description {
+  margin-top: 10px;
+  font-size: 13px;
+  color: var(--dark-gray);
+  text-align: center;
+}
+
+.suggestionTile__mutual {
+  display: block;
+  color: var(--dark-gray);
+  border: 0;
+  outline: 0;
+  background-color: transparent;
+  cursor: pointer;
+  margin: 0 auto;
+}
+
+.suggestionTile__mutual:hover {
+  text-decoration: underline;
+}
+
+.suggestionTile__btnContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.suggestionTile__btn {
+  background-color: transparent;
+  margin: 10px 0;
+  cursor: pointer;
+  width: 80%;
+  font-size: 16px;
+  border: 1px solid var(--blue);
+  color: var(--blue);
+  font-family: var(--font-heading);
+  border-radius: 20px;
+  padding: 5px 0;
+}

@@ -9,7 +9,20 @@
   --font-text: Nunito-Regular;
   --font-heading: Nunito-Bold;
 }
+/* Silver Theme */
 [data-theme="dark"] {
+  --dark: #fff;
+  --white: #191919;
+  --light-gray: #202124;
+  --dark-gray: #cfcfcf;
+  --blue: #cfcfcf;
+  --light-blue: #292929;
+  --gray: #292929;
+  --font-text: Nunito-Regular;
+  --font-heading: Nunito-Bold;
+}
+/* Gold Theme */
+/* [data-theme="dark"] {
   --dark: #ffd700;
   --white: #191919;
   --light-gray: #202124;
@@ -19,7 +32,7 @@
   --gray: #292929;
   --font-text: Nunito-Regular;
   --font-heading: Nunito-Bold;
-}
+} */
 html,
 body {
   padding: 0;
