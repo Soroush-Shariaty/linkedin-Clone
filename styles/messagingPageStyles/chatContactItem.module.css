@@ -1,0 +1,30 @@
+.chatContactItem {
+  cursor: pointer;
+}
+
+.chatContactItem:hover {
+  background-color: var(--gray);
+}
+
+.chatContactItem__container {
+  padding: 10px;
+}
+
+.chatContactItem__owner {
+  display: flex;
+}
+
+.chatContactItem__owner_img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+.chatContactItem__owner_info {
+  display: flex;
+  flex-direction: column;
+  margin-left: 10px;
+  font-size: 14px;
+  font-family: var(--font-heading);
+  color: var(--dark);
+}

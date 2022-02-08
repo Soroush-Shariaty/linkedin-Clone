@@ -37,7 +37,11 @@ const NavbarButtonContainer = ({ active }) => {
       <NavbarButton title="Jobs" isActive={false} href="/mynetwork">
         <IoMdBriefcase />
       </NavbarButton>
-      <NavbarButton title="Message" isActive={false} href="/mynetwork">
+      <NavbarButton
+        title="Messaging"
+        isActive={active === activeClass.messaging ? true : false}
+        href="/messaging"
+      >
         <AiFillMessage />
       </NavbarButton>
       <NavbarButton title="Notification" isActive={false} href="/mynetwork">

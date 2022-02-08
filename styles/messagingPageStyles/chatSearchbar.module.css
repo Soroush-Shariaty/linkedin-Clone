@@ -1,0 +1,44 @@
+.messageSearchbar {
+  display: flex;
+}
+
+.messageSearchbar__container {
+  width: 100%;
+  background-color: var(--light-blue);
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  margin: 10px;
+}
+
+.messageSearchbar__container_icon_magnifier {
+  font-size: 20px;
+  color: var(--dark-gray);
+}
+
+.messageSearchbar__container div {
+  padding: 7px 7px 0px;
+  cursor: pointer;
+  border-radius: 50%;
+}
+
+.messageSearchbar__container div:hover {
+  background-color: var(--gray);
+}
+
+.messageSearchbar__container_icon_gear {
+  font-size: 20px;
+  color: var(--dark-gray);
+}
+
+.messageSearchbar__container input {
+  width: 100%;
+  display: block;
+  outline: 0;
+  border: 0;
+  background-color: var(--light-blue);
+}
+
+.messageSearchbar__container input::placeholder {
+  color: var(--dark-gray);
+}

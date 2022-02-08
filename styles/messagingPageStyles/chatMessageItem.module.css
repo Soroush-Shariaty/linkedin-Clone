@@ -1,0 +1,31 @@
+.chatMessageItem {
+  cursor: pointer;
+}
+
+.chatMessageItem:hover {
+  background-color: var(--gray);
+}
+
+.chatMessageItem__container {
+  padding: 10px;
+}
+
+.chatMessageItem__container p {
+  margin-left: 50px;
+  margin-top: -15px;
+}
+
+.chatMessageItem__owner {
+  display: flex;
+}
+
+.chatMessageItem__owner_img {
+  border-radius: 50%;
+}
+
+.chatMessageItem__owner_info {
+  margin-left: 10px;
+  font-size: 14px;
+  font-family: var(--font-heading);
+  color: var(--dark);
+}
