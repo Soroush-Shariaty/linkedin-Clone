@@ -1,33 +1,32 @@
 import { useEffect, useState } from "react";
 import { useTheme } from "next-themes";
+import { useSelector, useDispatch } from "react-redux";
 import { BsFillSunFill, BsFillMoonFill } from "react-icons/bs";
 import styles from "../../../styles/navbarStyles/toggleDarkmode.module.css";
+import {
+  setThemeDark,
+  setThemeLight,
+} from "../../../redux/actions/darkmodeActions";
 
 const ToggleDarkmode = () => {
-  let matched = false;
-  useEffect(() => {
-    matched = window.matchMedia("(prefers-color-scheme: dark)").matches;
-    if (matched) {
-      setTheme("dark");
-    } else {
-      setTheme("light");
-    }
-  }, []);
   const { theme, setTheme } = useTheme();
+  const dispatch = useDispatch();
   //check if system darkmode is enabled.
-  const [toggle, setToggle] = useState(matched);
+  const darkmodeState = useSelector((state) => state.darkmode);
   const triggerToggle = () => {
-    setToggle(!toggle);
-    if (!toggle) {
+    debugger;
+    if (darkmodeState.darkmode) {
+      dispatch(setThemeLight());
       setTheme("light");
     } else {
+      dispatch(setThemeDark());
       setTheme("dark");
     }
   };
   return (
     <div
       className={
-        toggle
+        !darkmodeState.darkmode
           ? [styles.toggleDarkmode, styles.toggleDarkmode_checked].join(" ")
           : styles.toggleDarkmode
       }
