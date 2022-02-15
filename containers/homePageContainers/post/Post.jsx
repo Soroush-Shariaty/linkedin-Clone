@@ -11,11 +11,13 @@ import styles from "../../../styles/homePageStyles/post.module.css";
 import userImg from "../../../public/images/User-img.jpg";
 import postImg from "../../../public/images/post-pic.jpg";
 import PostButton from "../../../components/homePageComponents/postButton/postButton";
+import PostComments from "./../postComments/PostComments";
 
 const Post = () => {
   return (
     <div className={styles.post}>
       <div className={styles.post__like}>
+        {/* Descriptive section of who liked the post */}
         {/* <p className={styles.post__like_desc}>
           <b>Soroush Shariaty</b> Likes this
         </p>
@@ -68,6 +70,9 @@ const Post = () => {
         <PostButton text="Send">
           <FaPaperPlane />
         </PostButton>
+      </div>
+      <div>
+        <PostComments />
       </div>
     </div>
   );
