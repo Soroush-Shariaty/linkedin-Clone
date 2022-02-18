@@ -45,6 +45,7 @@
 
 .post__img {
   margin: 0 -10px;
+  position: relative;
 }
 
 .post__button_container {

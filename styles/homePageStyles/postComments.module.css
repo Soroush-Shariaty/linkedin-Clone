@@ -1,13 +1,13 @@
-.startPost__user_img_container {
+.postComments__user_img_container {
   width: 50px;
   height: 50px;
 }
 
-.startPost__user_img {
+.postComments__user_img {
   border-radius: 50%;
 }
 
-.startPost__btn {
+.postComments__btn {
   display: block;
   width: 100%;
   border-radius: 50px;
