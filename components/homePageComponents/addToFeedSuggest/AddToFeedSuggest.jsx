@@ -2,9 +2,9 @@ import Image from "next/image";
 import { FaPlus } from "react-icons/fa";
 
 import styles from "../../../styles/homePageStyles/addToFeedSuggest.module.css";
-import userImg from "../../../public/images/User-img.jpg";
 
-const AddToFeedSuggest = () => {
+const AddToFeedSuggest = ({ image, name, description }) => {
+  console.log(name);
   return (
     <div className={styles.addToFeedSuggest}>
       <div style={{ display: "flex" }}>
@@ -13,13 +13,13 @@ const AddToFeedSuggest = () => {
             width={50}
             height={50}
             className={styles.addToFeedSuggest__owner_img}
-            src={userImg}
+            src={`/images/${image}`}
             alt=""
           />
         </div>
         <div className={styles.addToFeedSuggest__owner_info}>
-          <span>Soroush Shariaty</span>
-          <span>Front-End Developer</span>
+          <span>{name}</span>
+          <span>{description}</span>
           <button className={styles.addToFeedSuggest__btn}>
             <FaPlus />
             <span>Follow</span>
