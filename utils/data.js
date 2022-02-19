@@ -27,6 +27,69 @@ export const data = {
       password: "123456",
       isAdmin: true,
     },
+    {
+      ID: 4,
+      profilePhoto: "Elena.jpg",
+      description: "Nurse",
+      name: "Elena Smith",
+      email: "Elena@gmail.com",
+      password: "123456",
+      isAdmin: false,
+    },
+    {
+      ID: 5,
+      profilePhoto: "William.jpg",
+      description: "Assistant Professor",
+      name: "William Moore",
+      email: "William@gmail.com",
+      password: "123456",
+      isAdmin: false,
+    },
+    {
+      ID: 6,
+      profilePhoto: "James.jpg",
+      description: "Petroleum Engineer",
+      name: "James McCarthy",
+      email: "James@gmail.com",
+      password: "123456",
+      isAdmin: false,
+    },
+    {
+      ID: 7,
+      profilePhoto: "Sara.jpg",
+      description: "Psychologist",
+      name: "Sara Wembley",
+      email: "Sara@gmail.com",
+      password: "123456",
+      isAdmin: false,
+    },
+    {
+      ID: 8,
+      profilePhoto: "Madison.jpg",
+      description: "Teacher",
+      name: "Madison Merchant",
+      email: "Madison@gmail.com",
+      password: "123456",
+      isAdmin: false,
+    },
+    {
+      ID: 9,
+      profilePhoto: "Antonio.jpg",
+      description: "Accountant",
+      name: "Antonio Rodriguez",
+      email: "Antonio@gmail.com",
+      password: "123456",
+      isAdmin: false,
+    },
+    {
+      ID: 10,
+      profilePhoto: "Lisa.jpg",
+      description: "Secretary",
+      name: "Lisa West",
+      email: "Lisa@gmail.com",
+      password: "123456",
+      isAdmin: false,
+    },
   ],
   posts: [
     {
@@ -46,24 +109,28 @@ export const data = {
       likeCount: 11,
       Comments: [
         {
-          commentOwnerID: 1,
+          commentId: 11,
+          commentOwnerID: 5,
           text: `Lorem ipsum dolor sit amet, et minim liber patrioque mel,
                  vis latine alienum cu, ex pri summo vivendum similique. Offendit delicata ne has,
                   causae temporibus est ei. Id usu brute scaevola, sit ei regione tacimates.`,
           replies: [
             {
+              commentId: 111,
               commentOwnerID: 2,
               text: `Lorem ipsum dolor sit amet, et minim liber patrioque mel,
                         vis latine alienum cu, ex pri summo vivendum similique. Offendit delicata ne has,
                          causae temporibus est ei. Id usu brute scaevola, sit ei regione tacimates.`,
               replies: [
                 {
+                  commentId: 1111,
                   commentOwnerID: 1,
                   text: `Lorem ipsum dolor sit amet, et minim liber patrioque mel,
                                 vis latine alienum cu, ex pri summo vivendum similique. Offendit delicata ne has,
                                  causae temporibus est ei. Id usu brute scaevola, sit ei regione tacimates.`,
                 },
                 {
+                  commentId: 1112,
                   commentOwnerID: 3,
                   text: `Lorem ipsum dolor sit amet, et minim liber patrioque mel,
                                 vis latine alienum cu, ex pri summo vivendum similique. Offendit delicata ne has,
@@ -72,18 +139,21 @@ export const data = {
               ],
             },
             {
-              commentOwnerID: 3,
+              commentId: 12,
+              commentOwnerID: 7,
               text: `Lorem ipsum dolor sit amet, et minim liber patrioque mel,
                         vis latine alienum cu, ex pri summo vivendum similique. Offendit delicata ne has,
                          causae temporibus est ei. Id usu brute scaevola, sit ei regione tacimates.`,
               replies: [
                 {
-                  commentOwnerID: 2,
+                  commentId: 121,
+                  commentOwnerID: 9,
                   text: `Lorem ipsum dolor sit amet, et minim liber patrioque mel,
                                 vis latine alienum cu, ex pri summo vivendum similique. Offendit delicata ne has,
                                  causae temporibus est ei. Id usu brute scaevola, sit ei regione tacimates.`,
                 },
                 {
+                  commentId: 122,
                   commentOwnerID: 3,
                   text: `Lorem ipsum dolor sit amet, et minim liber patrioque mel,
                                 vis latine alienum cu, ex pri summo vivendum similique. Offendit delicata ne has,
@@ -97,7 +167,7 @@ export const data = {
     },
     {
       postId: 2,
-      postOwnerID: 2,
+      postOwnerID: 4,
       // postPhoto: "../../../public/images/post1.jpg",
 
       postPhoto: {
@@ -112,24 +182,28 @@ export const data = {
       likeCount: 43,
       Comments: [
         {
-          commentOwnerID: 3,
+          commentId: 21,
+          commentOwnerID: 6,
           text: `Lorem ipsum dolor sit amet, et minim liber patrioque mel,
                  vis latine alienum cu, ex pri summo vivendum similique. Offendit delicata ne has,
                   causae temporibus est ei. Id usu brute scaevola, sit ei regione tacimates.`,
           replies: [
             {
-              commentOwnerID: 2,
+              commentId: 211,
+              commentOwnerID: 8,
               text: `Lorem ipsum dolor sit amet, et minim liber patrioque mel,
                         vis latine alienum cu, ex pri summo vivendum similique. Offendit delicata ne has,
                          causae temporibus est ei. Id usu brute scaevola, sit ei regione tacimates.`,
               replies: [
                 {
-                  commentOwnerID: 3,
+                  commentId: 2111,
+                  commentOwnerID: 5,
                   text: `Lorem ipsum dolor sit amet, et minim liber patrioque mel,
                                 vis latine alienum cu, ex pri summo vivendum similique. Offendit delicata ne has,
                                  causae temporibus est ei. Id usu brute scaevola, sit ei regione tacimates.`,
                 },
                 {
+                  commentId: 2112,
                   commentOwnerID: 2,
                   text: `Lorem ipsum dolor sit amet, et minim liber patrioque mel,
                                 vis latine alienum cu, ex pri summo vivendum similique. Offendit delicata ne has,
@@ -138,18 +212,21 @@ export const data = {
               ],
             },
             {
+              commentId: 212,
               commentOwnerID: 2,
               text: `Lorem ipsum dolor sit amet, et minim liber patrioque mel,
                         vis latine alienum cu, ex pri summo vivendum similique. Offendit delicata ne has,
                          causae temporibus est ei. Id usu brute scaevola, sit ei regione tacimates.`,
               replies: [
                 {
-                  commentOwnerID: 1,
+                  commentId: 2121,
+                  commentOwnerID: 6,
                   text: `Lorem ipsum dolor sit amet, et minim liber patrioque mel,
                                 vis latine alienum cu, ex pri summo vivendum similique. Offendit delicata ne has,
                                  causae temporibus est ei. Id usu brute scaevola, sit ei regione tacimates.`,
                 },
                 {
+                  commentId: 2122,
                   commentOwnerID: 3,
                   text: `Lorem ipsum dolor sit amet, et minim liber patrioque mel,
                                 vis latine alienum cu, ex pri summo vivendum similique. Offendit delicata ne has,
@@ -177,25 +254,29 @@ export const data = {
       likeCount: 121,
       Comments: [
         {
+          commentId: 31,
           commentOwnerID: 1,
           text: `Lorem ipsum dolor sit amet, et minim liber patrioque mel,
                  vis latine alienum cu, ex pri summo vivendum similique. Offendit delicata ne has,
                   causae temporibus est ei. Id usu brute scaevola, sit ei regione tacimates.`,
           replies: [
             {
-              commentOwnerID: 2,
+              commentId: 311,
+              commentOwnerID: 4,
               text: `Lorem ipsum dolor sit amet, et minim liber patrioque mel,
                         vis latine alienum cu, ex pri summo vivendum similique. Offendit delicata ne has,
                          causae temporibus est ei. Id usu brute scaevola, sit ei regione tacimates.`,
               replies: [
                 {
-                  commentOwnerID: 1,
+                  commentId: 3111,
+                  commentOwnerID: 6,
                   text: `Lorem ipsum dolor sit amet, et minim liber patrioque mel,
                                 vis latine alienum cu, ex pri summo vivendum similique. Offendit delicata ne has,
                                  causae temporibus est ei. Id usu brute scaevola, sit ei regione tacimates.`,
                 },
                 {
-                  commentOwnerID: 2,
+                  commentId: 3112,
+                  commentOwnerID: 1,
                   text: `Lorem ipsum dolor sit amet, et minim liber patrioque mel,
                                 vis latine alienum cu, ex pri summo vivendum similique. Offendit delicata ne has,
                                  causae temporibus est ei. Id usu brute scaevola, sit ei regione tacimates.`,
@@ -203,18 +284,21 @@ export const data = {
               ],
             },
             {
+              commentId: 312,
               commentOwnerID: 2,
               text: `Lorem ipsum dolor sit amet, et minim liber patrioque mel,
                         vis latine alienum cu, ex pri summo vivendum similique. Offendit delicata ne has,
                          causae temporibus est ei. Id usu brute scaevola, sit ei regione tacimates.`,
               replies: [
                 {
+                  commentId: 3121,
                   commentOwnerID: 3,
                   text: `Lorem ipsum dolor sit amet, et minim liber patrioque mel,
                                 vis latine alienum cu, ex pri summo vivendum similique. Offendit delicata ne has,
                                  causae temporibus est ei. Id usu brute scaevola, sit ei regione tacimates.`,
                 },
                 {
+                  commentId: 3122,
                   commentOwnerID: 1,
                   text: `Lorem ipsum dolor sit amet, et minim liber patrioque mel,
                                 vis latine alienum cu, ex pri summo vivendum similique. Offendit delicata ne has,
@@ -228,7 +312,7 @@ export const data = {
     },
     {
       postId: 4,
-      postOwnerID: 2,
+      postOwnerID: 6,
       // postPhoto: "../../../public/images/post-pic.jpg",
       postPhoto: {
         name: "post3.jpg",
@@ -242,25 +326,29 @@ export const data = {
       likeCount: 4,
       Comments: [
         {
+          commentId: 41,
           commentOwnerID: 2,
           text: `Lorem ipsum dolor sit amet, et minim liber patrioque mel,
                  vis latine alienum cu, ex pri summo vivendum similique. Offendit delicata ne has,
                   causae temporibus est ei. Id usu brute scaevola, sit ei regione tacimates.`,
           replies: [
             {
+              commentId: 411,
               commentOwnerID: 3,
               text: `Lorem ipsum dolor sit amet, et minim liber patrioque mel,
                         vis latine alienum cu, ex pri summo vivendum similique. Offendit delicata ne has,
                          causae temporibus est ei. Id usu brute scaevola, sit ei regione tacimates.`,
               replies: [
                 {
+                  commentId: 4111,
                   commentOwnerID: 2,
                   text: `Lorem ipsum dolor sit amet, et minim liber patrioque mel,
                                 vis latine alienum cu, ex pri summo vivendum similique. Offendit delicata ne has,
                                  causae temporibus est ei. Id usu brute scaevola, sit ei regione tacimates.`,
                 },
                 {
-                  commentOwnerID: 1,
+                  commentId: 4112,
+                  commentOwnerID: 7,
                   text: `Lorem ipsum dolor sit amet, et minim liber patrioque mel,
                                 vis latine alienum cu, ex pri summo vivendum similique. Offendit delicata ne has,
                                  causae temporibus est ei. Id usu brute scaevola, sit ei regione tacimates.`,
@@ -268,18 +356,21 @@ export const data = {
               ],
             },
             {
-              commentOwnerID: 1,
+              commentId: 412,
+              commentOwnerID: 4,
               text: `Lorem ipsum dolor sit amet, et minim liber patrioque mel,
                         vis latine alienum cu, ex pri summo vivendum similique. Offendit delicata ne has,
                          causae temporibus est ei. Id usu brute scaevola, sit ei regione tacimates.`,
               replies: [
                 {
-                  commentOwnerID: 3,
+                  commentId: 4121,
+                  commentOwnerID: 9,
                   text: `Lorem ipsum dolor sit amet, et minim liber patrioque mel,
                                 vis latine alienum cu, ex pri summo vivendum similique. Offendit delicata ne has,
                                  causae temporibus est ei. Id usu brute scaevola, sit ei regione tacimates.`,
                 },
                 {
+                  commentId: 4122,
                   commentOwnerID: 3,
                   text: `Lorem ipsum dolor sit amet, et minim liber patrioque mel,
                                 vis latine alienum cu, ex pri summo vivendum similique. Offendit delicata ne has,
@@ -294,7 +385,6 @@ export const data = {
     {
       postId: 5,
       postOwnerID: 3,
-      // postPhoto: "../../../public/images/post1.jpg",
       postPhoto: {
         name: "post1.jpg",
         width: 750,
@@ -305,56 +395,7 @@ export const data = {
        causae temporibus est ei. Id usu brute scaevola, sit ei regione tacimates.`,
       Time: "...",
       likeCount: 1100,
-      Comments: [
-        {
-          commentOwnerID: 3,
-          text: `Lorem ipsum dolor sit amet, et minim liber patrioque mel,
-                 vis latine alienum cu, ex pri summo vivendum similique. Offendit delicata ne has,
-                  causae temporibus est ei. Id usu brute scaevola, sit ei regione tacimates.`,
-          replies: [
-            {
-              commentOwnerID: 1,
-              text: `Lorem ipsum dolor sit amet, et minim liber patrioque mel,
-                        vis latine alienum cu, ex pri summo vivendum similique. Offendit delicata ne has,
-                         causae temporibus est ei. Id usu brute scaevola, sit ei regione tacimates.`,
-              replies: [
-                {
-                  commentOwnerID: 2,
-                  text: `Lorem ipsum dolor sit amet, et minim liber patrioque mel,
-                                vis latine alienum cu, ex pri summo vivendum similique. Offendit delicata ne has,
-                                 causae temporibus est ei. Id usu brute scaevola, sit ei regione tacimates.`,
-                },
-                {
-                  commentOwnerID: 1,
-                  text: `Lorem ipsum dolor sit amet, et minim liber patrioque mel,
-                                vis latine alienum cu, ex pri summo vivendum similique. Offendit delicata ne has,
-                                 causae temporibus est ei. Id usu brute scaevola, sit ei regione tacimates.`,
-                },
-              ],
-            },
-            {
-              commentOwnerID: 3,
-              text: `Lorem ipsum dolor sit amet, et minim liber patrioque mel,
-                        vis latine alienum cu, ex pri summo vivendum similique. Offendit delicata ne has,
-                         causae temporibus est ei. Id usu brute scaevola, sit ei regione tacimates.`,
-              replies: [
-                {
-                  commentOwnerID: 2,
-                  text: `Lorem ipsum dolor sit amet, et minim liber patrioque mel,
-                                vis latine alienum cu, ex pri summo vivendum similique. Offendit delicata ne has,
-                                 causae temporibus est ei. Id usu brute scaevola, sit ei regione tacimates.`,
-                },
-                {
-                  commentOwnerID: 1,
-                  text: `Lorem ipsum dolor sit amet, et minim liber patrioque mel,
-                                vis latine alienum cu, ex pri summo vivendum similique. Offendit delicata ne has,
-                                 causae temporibus est ei. Id usu brute scaevola, sit ei regione tacimates.`,
-                },
-              ],
-            },
-          ],
-        },
-      ],
+      Comments: [],
     },
   ],
 };

@@ -23,6 +23,15 @@ const Post = ({
   ownerPhoto,
   comments,
 }) => {
+  let commentCount = comments.length;
+  // for (let i = 0; i < comments.length; i++) {
+  //   for (let j = 0; comments[i].replies.length; j++) {
+  //     commentCount++;
+  //     for (let k = 0; comments[i].replies[j].repliesOfReply.length; k++) {
+  //       commentCount++;
+  //     }
+  //   }
+  // }
   return (
     <div className={styles.post}>
       <div className={styles.post__like}>
@@ -65,7 +74,9 @@ const Post = ({
           <span>{likeCount}</span>
         </div>
         <div>
-          <span className={styles.post__comment_info}>4 comment</span>
+          <span className={styles.post__comment_info}>
+            {commentCount} Comments
+          </span>
         </div>
       </div>
       <hr />

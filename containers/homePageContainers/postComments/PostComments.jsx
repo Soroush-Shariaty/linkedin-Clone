@@ -24,14 +24,14 @@ const PostComments = ({ profilePhoto, comments }) => {
           </div>
           <TextareaAutosize
             placeholder="Add a comment..."
-            className={styles.postComments__btn}
+            className={styles.postComments__textarea}
             maxRows={20}
             value={showButton}
             onChange={(event) => setShowButton(event.target.value)}
           />
         </div>
         <div style={showButton ? { display: "block" } : { display: "none" }}>
-          <button>Post</button>
+          <button className={styles.postComments__postButton}>Post</button>
         </div>
       </div>
       <div>

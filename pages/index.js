@@ -13,7 +13,7 @@ import { activeClass } from "./../utils/activeClassEnum";
 import { data } from "../utils/data";
 import PostsContainer from "../containers/homePageContainers/postsContainer/PostsContainer";
 
-const HomePage = ({ postDataList }) => {
+const HomePage = ({ postDataList, addTofeedUsers }) => {
   return (
     <div>
       <Navbar active={activeClass.home} />
@@ -28,7 +28,7 @@ const HomePage = ({ postDataList }) => {
           <PostsContainer postDataList={postDataList} />
         </div>
         <div>
-          <AddToFeed />
+          <AddToFeed users={addTofeedUsers} />
           <DreamJob />
         </div>
       </BodyContainer>
@@ -75,6 +75,7 @@ export const getStaticProps = () => {
   return {
     props: {
       postDataList,
+      addTofeedUsers: users.slice(3, 6),
     },
   };
 };
