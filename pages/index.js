@@ -1,17 +1,17 @@
 import Navbar from "./../containers/navbarContainers/navbar/Navbar";
 import BodyContainer from "./../containers/bodyContainer/BodyContainer";
-import { Sortby } from "../components/homePageComponents/index";
+import { Sortby } from "../components/indexPageComponents/index";
 import {
   Profile,
   Recent,
   StartPost,
   Post,
   AddToFeed,
-} from "../containers/homePageContainers/index";
-import DreamJob from "../containers/homePageContainers/dreamJob/DreamJob";
+} from "../containers/indexPageContainers/index";
+import DreamJob from "../containers/indexPageContainers/dreamJob/DreamJob";
 import { activeClass } from "./../utils/activeClassEnum";
 import { data } from "../utils/data";
-import PostsContainer from "../containers/homePageContainers/postsContainer/PostsContainer";
+import PostsContainer from "../containers/indexPageContainers/postsContainer/PostsContainer";
 
 const HomePage = ({ postDataList, addTofeedUsers }) => {
   return (
@@ -55,11 +55,25 @@ export const getStaticProps = () => {
           let replyOfReplyOwner = users.find(
             (person) => person.ID === replyOfReply.commentOwnerID
           );
-          return { replyOfReplyOwner, text: replyOfReply.text };
+          return {
+            replyOfReplyOwner,
+            text: replyOfReply.text,
+            commentId: replyOfReply.commentId,
+          };
         });
-        return { replyOwner, repliesOfReply, text: reply.text };
+        return {
+          replyOwner,
+          repliesOfReply,
+          text: reply.text,
+          commentId: reply.commentId,
+        };
       });
-      return { replies, CommentOwner, text: comment.text };
+      return {
+        replies,
+        CommentOwner,
+        text: comment.text,
+        commentId: comment.commentId,
+      };
     });
     postDataList.push({
       key: post.postId,

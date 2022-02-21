@@ -1,0 +1,40 @@
+.comment {
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: center;
+}
+
+.comment__container {
+  border-radius: 0 10px 10px 10px;
+  background-color: var(--gray);
+  padding: 10px;
+  width: 100%;
+  margin-left: 5px;
+}
+
+.comment__owner_img {
+  border-radius: 50%;
+}
+
+.comment__owner_img_container {
+  width: 50px;
+}
+
+.comment__owner_info {
+  font-size: 14px;
+  font-family: var(--font-heading);
+  color: var(--dark-gray);
+  display: flex;
+  justify-content: space-between;
+}
+
+.comment__owner_info_name_container {
+  display: flex;
+  flex-direction: column;
+}
+
+.comment__owner_info_name_container span:nth-child(2) {
+  font-size: 12px;
+  font-family: var(--font-text);
+  color: var(--dark-gray);
+}

@@ -8,6 +8,7 @@
   --gray: #e0dfdc;
   --font-text: Nunito-Regular;
   --font-heading: Nunito-Bold;
+  --like-button-blue: #0a66c2;
 }
 /* Silver Theme */
 [data-theme="dark"] {
@@ -19,6 +20,7 @@
   --light-blue: #292929;
   --gray: #292929;
   --font-text: Nunito-Regular;
+  --like-button-blue: #0a66c2;
   --font-heading: Nunito-Bold;
 }
 /* Gold Theme */
