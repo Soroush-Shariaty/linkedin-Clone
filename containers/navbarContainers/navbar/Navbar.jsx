@@ -3,6 +3,7 @@ import {
   Searchbar,
   ToggleDarkMode,
 } from "../../../components/navbarComponents/index";
+
 import styles from "../../../styles/navbarStyles/navbar.module.css";
 
 const Navbar = ({ active }) => {

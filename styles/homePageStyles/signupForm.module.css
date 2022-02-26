@@ -1,0 +1,28 @@
+.loginForm {
+  font-size: 16px;
+  width: 60%;
+  margin-top: 20px;
+}
+
+.loginForm input {
+  padding: 10px;
+  width: 100%;
+  border-radius: 5px;
+  outline: 0;
+  border: 1px solid var(--dark-gray);
+  font-family: var(--font-heading);
+}
+.loginForm p {
+  padding: 5px;
+  margin: 0;
+  color: var(--error);
+  font-size: 10px;
+  font-family: var(--font-heading);
+}
+
+.loginForm input:nth-child(4) {
+  background-color: var(--blue);
+  color: var(--white);
+  display: block;
+  border-radius: 20px;
+}

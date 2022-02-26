@@ -1,16 +1,19 @@
 import Image from "next/image";
+import { useSelector } from "react-redux";
 import Link from "next/link";
 import styles from "../../../styles/indexPageStyles/profile.module.css";
 import userImage from "../../../public/images/User-img.jpg";
-import bgImage from "../../../public/images/Background.jpg";
+// import bgImage from "../../../public/images/bg1.jpg";
+
 const Profile = () => {
+  const user = useSelector((state) => state.user);
   return (
     <div className={styles.profile}>
       <div>
         <div className={styles.profile__background_img_container}>
           <Image
             height={70}
-            src={bgImage}
+            src={`/images/${user.backgroundImage}`}
             alt="background"
             objectFit="cover"
             layout="fill"
@@ -19,7 +22,7 @@ const Profile = () => {
         <div className={styles.profile__user_img_container}>
           <Image
             className={styles.profile__user_img}
-            src={userImage}
+            src={`/images/${user.profilePhoto}`}
             alt="user"
             layout="fill"
           />
@@ -27,10 +30,10 @@ const Profile = () => {
       </div>
       <Link href="/nowhere">
         <a className={styles.profile__user_name}>
-          <h4 className={styles.profile__user_name_text}>Soroush Shariaty</h4>
+          <h4 className={styles.profile__user_name_text}>{user.name}</h4>
         </a>
       </Link>
-      <p className={styles.profile__description}>Front-End Developer</p>
+      <p className={styles.profile__description}>{user.description}</p>
       <hr className={styles.profile__separator} />
       <div className={styles.profile__links}>
         <Link href="/status">

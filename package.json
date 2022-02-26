@@ -8,6 +8,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "formik": "^2.2.9",
     "next": "12.0.8",
     "next-themes": "^0.0.15",
     "react": "17.0.2",
@@ -17,7 +18,8 @@
     "react-redux": "^7.2.6",
     "react-textarea-autosize": "^8.3.3",
     "redux": "^4.1.2",
-    "redux-thunk": "^2.4.1"
+    "redux-thunk": "^2.4.1",
+    "yup": "^0.32.11"
   },
   "devDependencies": {
     "eslint": "8.7.0",

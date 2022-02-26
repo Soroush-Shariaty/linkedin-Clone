@@ -5,15 +5,23 @@ import {
   Profile,
   Recent,
   StartPost,
-  Post,
   AddToFeed,
 } from "../containers/indexPageContainers/index";
 import DreamJob from "../containers/indexPageContainers/dreamJob/DreamJob";
 import { activeClass } from "./../utils/activeClassEnum";
 import { data } from "../utils/data";
 import PostsContainer from "../containers/indexPageContainers/postsContainer/PostsContainer";
+import { useRouter } from "next/router";
+import { useEffect } from "react";
 
 const HomePage = ({ postDataList, addTofeedUsers }) => {
+  // const user = useSelector((state) => state.user);
+  // const router = useRouter();
+  // useEffect(() => {
+  //   if ((user.email = "")) {
+  //     router.push("/home");
+  //   }
+  // }, []);
   return (
     <div>
       <Navbar active={activeClass.home} />
@@ -59,12 +67,14 @@ export const getStaticProps = () => {
             replyOfReplyOwner,
             text: replyOfReply.text,
             commentId: replyOfReply.commentId,
+            time: replyOfReply.time,
           };
         });
         return {
           replyOwner,
           repliesOfReply,
           text: reply.text,
+          time: reply.time,
           commentId: reply.commentId,
         };
       });
@@ -72,12 +82,14 @@ export const getStaticProps = () => {
         replies,
         CommentOwner,
         text: comment.text,
+        time: comment.time,
         commentId: comment.commentId,
       };
     });
     postDataList.push({
       key: post.postId,
       description: post.description,
+      time: post.time,
       likeCount: post.likeCount,
       postOwner: postOwner.name,
       postOwnerDescription: postOwner.description,

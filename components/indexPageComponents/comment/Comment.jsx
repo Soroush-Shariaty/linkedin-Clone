@@ -1,30 +1,32 @@
 import Image from "next/image";
+
 import styles from "../../../styles/indexPageStyles/comment.module.css";
 
-const Comment = ({ text, owner, level }) => {
+const Comment = ({ text, owner, level, time }) => {
   // console.log(owner);
   return (
     <div className={styles.comment} style={{ marginLeft: `${50 * level}px` }}>
       <div className={styles.comment__owner_img_container}>
-        <Image
+        <img
           className={styles.comment__owner_img}
           src={`/images/${owner.profilePhoto}`}
           alt=""
-          width={50}
-          height={50}
         />
       </div>
-      <div className={styles.comment__container}>
-        <div className={styles.comment__owner_info}>
-          <div className={styles.comment__owner_info_name_container}>
-            <span>{owner.name}</span>
-            <span>{owner.description}</span>
+      <div>
+        <div className={styles.comment__container}>
+          <div className={styles.comment__owner_info}>
+            <div className={styles.comment__owner_info_name_container}>
+              <span>{owner.name}</span>
+              <span>{owner.description}</span>
+            </div>
+            <div>
+              <span className={styles.comment__time}>{time}</span>
+            </div>
           </div>
-          <div>
-            <span>14:45</span>
-          </div>
+          <p>{text}</p>
         </div>
-        <p>{text}</p>
+        <button className={styles.comment__replybutton}>Reply</button>
       </div>
     </div>
   );

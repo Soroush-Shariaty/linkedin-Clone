@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { useSelector } from "react-redux";
 import Image from "next/image";
 import {
   AiFillPicture,
@@ -7,16 +8,18 @@ import {
   AiOutlinePicLeft,
 } from "react-icons/ai";
 import { StartpostButton } from "../../../components/indexPageComponents/index";
-import styles from "../../../styles/indexPageStyles/startpost.module.css";
-import userPic from "../../../public/images/User-img.jpg";
 import {
   StartPostPhotoModal,
   StartPostVideoModal,
 } from "../../../modals/homePageModals/index";
 
+import styles from "../../../styles/indexPageStyles/startpost.module.css";
+import userPic from "../../../public/images/User-img.jpg";
+
 const StartPost = () => {
   const [isPhotoModalOpen, setisPhotoModalOpen] = useState(false);
   const [isVideoModalOpen, setisVideoModalOpen] = useState(false);
+  const user = useSelector((state) => state.user);
   return (
     <div className={styles.startPost}>
       <StartPostPhotoModal
@@ -30,8 +33,9 @@ const StartPost = () => {
       <div style={{ display: "flex", marginBottom: "10px" }}>
         <div className={styles.startPost__user_img_container}>
           <Image
-            src={userPic}
-            layout="responsive"
+            src={`/images/${user.profilePhoto}`}
+            width={50}
+            height={50}
             alt="user"
             className={styles.startPost__user_img}
           />

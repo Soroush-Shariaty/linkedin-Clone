@@ -1,0 +1,38 @@
+.homePage {
+  margin: 20px;
+}
+
+.homePage__container {
+  display: flex;
+  font-size: 20px;
+}
+
+.homePage__container h1 {
+  font-size: 40px;
+  font-weight: normal;
+}
+
+.homePage__container_buttons {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  cursor: pointer;
+}
+
+.homePage__link {
+  font-family: var(--font-heading);
+  color: var(--dark-gray);
+}
+
+.homePage__link:nth-of-type(2) {
+  margin-left: 15px;
+}
+
+.homePage__link:hover {
+  text-decoration: underline;
+}
+
+.homePage__link_active {
+  text-decoration: underline;
+  color: var(--dark);
+}
