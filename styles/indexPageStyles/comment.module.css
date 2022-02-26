@@ -1,7 +1,6 @@
 .comment {
   margin-bottom: 10px;
   display: flex;
-  justify-content: center;
 }
 
 .comment__container {
@@ -14,6 +13,8 @@
 
 .comment__owner_img {
   border-radius: 50%;
+  width: 45px;
+  height: 45px;
 }
 
 .comment__owner_img_container {
@@ -37,4 +38,21 @@
   font-size: 12px;
   font-family: var(--font-text);
   color: var(--dark-gray);
+}
+
+.comment__time {
+  font-size: 12px;
+  font-family: var(--font-text);
+  color: var(--dark-gray);
+}
+
+.comment__replybutton {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  color: var(--dark-gray);
+  cursor: pointer;
+}
+.comment__replybutton:hover {
+  text-decoration: underline;
 }

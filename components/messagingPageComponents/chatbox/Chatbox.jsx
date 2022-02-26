@@ -4,7 +4,9 @@ import {
   AiOutlineGif,
   AiFillPicture,
 } from "react-icons/ai";
+
 import styles from "../../../styles/messagingPageStyles/chatbox.module.css";
+
 const Chatbox = () => {
   return (
     <div className={styles.chatbox}>

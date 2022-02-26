@@ -1,6 +1,8 @@
 import Image from "next/image";
+
 import styles from "../../../styles/messagingPageStyles/chatMessageItem.module.css";
 import userImg from "../../../public/images/User-img.jpg";
+
 const ChatMessageItem = () => {
   return (
     <div className={styles.chatMessageItem}>

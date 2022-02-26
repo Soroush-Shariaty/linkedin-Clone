@@ -1,8 +1,10 @@
 import Image from "next/image";
 import Link from "next/link";
+
 import styles from "../../../styles/myNetworkPageStyles/suggestionTile.module.css";
 import userImage from "../../../public/images/User-img.jpg";
-import bgImage from "../../../public/images/Background.jpg";
+import bgImage from "../../../public/images/bg1.jpg";
+
 const SuggestionTile = () => {
   return (
     <div className={styles.suggestionTile}>

@@ -1,6 +1,8 @@
 import { AiOutlineSearch } from "react-icons/ai";
 import { BsGearWide } from "react-icons/bs";
+
 import styles from "../../../styles/messagingPageStyles/chatSearchbar.module.css";
+
 const ChatSearchbar = () => {
   return (
     <div className={styles.messageSearchbar}>

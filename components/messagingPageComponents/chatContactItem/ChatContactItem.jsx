@@ -1,4 +1,5 @@
 import Image from "next/image";
+
 import styles from "../../../styles/messagingPageStyles/chatContactItem.module.css";
 import userImg from "../../../public/images/person2.jpg";
 

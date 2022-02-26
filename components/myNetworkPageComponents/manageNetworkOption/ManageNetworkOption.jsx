@@ -1,4 +1,5 @@
 import Link from "next/link";
+
 import styles from "../../../styles/myNetworkPageStyles/manageNetworkOption.module.css";
 
 const ManageNetworkOption = ({ href, children, text, number }) => {

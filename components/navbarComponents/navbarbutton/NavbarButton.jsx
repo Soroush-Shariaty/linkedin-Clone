@@ -1,5 +1,7 @@
 import Link from "next/link";
+
 import styles from "../../../styles/navbarStyles/navbarbutton.module.css";
+
 const NavbarButton = ({ isActive, children, title, href }) => {
   return (
     <Link href={href} passHref>

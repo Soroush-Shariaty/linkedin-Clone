@@ -1,7 +1,8 @@
 import Image from "next/image";
 import { AiOutlineSearch } from "react-icons/ai";
-import logo from "../../../public/images/LinkedIn_logo.png";
+
 import styles from "../../../styles/navbarStyles/Searchbar.module.css";
+import logo from "../../../public/images/LinkedIn_logo.png";
 
 const Searchbar = () => {
   return (

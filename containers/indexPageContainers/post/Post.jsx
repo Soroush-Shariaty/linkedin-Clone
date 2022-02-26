@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { useState } from "react";
 import {
   FaRegThumbsUp,
   FaRegCommentDots,
@@ -8,20 +9,22 @@ import {
   FaThumbsUp,
 } from "react-icons/fa";
 import { MdThumbUpAlt } from "react-icons/md";
-import styles from "../../../styles/indexPageStyles/post.module.css";
-import PostButton from "../../../components/indexPageComponents/postButton/postButton";
-import PostComments from "../postComments/PostComments";
-import { useState } from "react";
+import { PostButton } from "../../../components/indexPageComponents/index";
+import { PostComments } from "../index";
 
-const Post = ({
-  description,
-  likeCount,
-  postOwner,
-  postOwnerDescription,
-  postPhoto,
-  ownerPhoto,
-  comments,
-}) => {
+import styles from "../../../styles/indexPageStyles/post.module.css";
+
+const Post = ({ postDataItem }) => {
+  const {
+    description,
+    likeCount,
+    postOwner,
+    postOwnerDescription,
+    postPhoto,
+    ownerPhoto,
+    comments,
+    time,
+  } = postDataItem;
   const [showComments, setShowComments] = useState(false);
   const [postLiked, setPostLiked] = useState(false);
   const [newLikeCount, setNewLikeCount] = useState(likeCount);
@@ -68,19 +71,19 @@ const Post = ({
           <span>{postOwner}</span>
           <span>{postOwnerDescription}</span>
           <span>
-            8h <FaGlobeAmericas />{" "}
+            {time} <FaGlobeAmericas />{" "}
           </span>
         </div>
       </div>
       <p className={styles.post__text}>{description}</p>
       <div className={styles.post__img}>
-        <Image
-          src={`/images/${postPhoto.name}`}
-          alt=""
-          height={postPhoto.height}
-          width={postPhoto.width}
-          layout="responsive"
-        />
+        {postPhoto.name && (
+          <img
+            className={styles.class}
+            src={`/images/${postPhoto.name}`}
+            alt=""
+          />
+        )}
       </div>
       <div className={styles.post__feedback}>
         <div className={styles.post__likes_info}>

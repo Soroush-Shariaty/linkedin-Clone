@@ -9,6 +9,7 @@
   --font-text: Nunito-Regular;
   --font-heading: Nunito-Bold;
   --like-button-blue: #0a66c2;
+  --error: #c62828;
 }
 /* Silver Theme */
 [data-theme="dark"] {
@@ -22,6 +23,7 @@
   --font-text: Nunito-Regular;
   --like-button-blue: #0a66c2;
   --font-heading: Nunito-Bold;
+  --error: #c62828;
 }
 /* Gold Theme */
 /* [data-theme="dark"] {

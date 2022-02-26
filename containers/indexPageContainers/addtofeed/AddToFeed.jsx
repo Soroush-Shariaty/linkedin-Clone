@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { FaArrowRight } from "react-icons/fa";
 import { AddToFeedSuggest } from "../../../components/indexPageComponents/index";
+
 import styles from "../../../styles/indexPageStyles/addToFeed.module.css";
 
 const AddToFeed = ({ users }) => {

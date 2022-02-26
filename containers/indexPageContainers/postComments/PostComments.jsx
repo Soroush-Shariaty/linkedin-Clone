@@ -1,8 +1,10 @@
-import styles from "../../../styles/indexPageStyles/postComments.module.css";
+import { useState } from "react";
 import Image from "next/image";
 import TextareaAutosize from "react-textarea-autosize";
-import { useState } from "react";
-import Comment from "../../../components/indexPageComponents/comment/Comment";
+import { useSelector } from "react-redux";
+import { Comment } from "../../../components/indexPageComponents/index";
+
+import styles from "../../../styles/indexPageStyles/postComments.module.css";
 
 const PostComments = ({
   profilePhoto,
@@ -11,11 +13,7 @@ const PostComments = ({
   postOwnerDescription,
 }) => {
   const [showButton, setShowButton] = useState("");
-  const owner = {
-    profilePhoto,
-    name: postOwner,
-    description: postOwnerDescription,
-  };
+  const user = useSelector((state) => state.user);
   let commentJsxList = [];
   comments.map((comment) => {
     let commentComp = (
@@ -24,6 +22,7 @@ const PostComments = ({
         level={0}
         owner={comment.CommentOwner}
         text={comment.text}
+        time={comment.time}
       />
     );
     let replies = [];
@@ -34,6 +33,7 @@ const PostComments = ({
           level={1}
           owner={reply.replyOwner}
           text={reply.text}
+          time={reply.time}
         />
       );
       reply.repliesOfReply.map((replyofReply) => {
@@ -43,6 +43,7 @@ const PostComments = ({
             level={2}
             owner={replyofReply.replyOfReplyOwner}
             text={replyofReply.text}
+            time={replyofReply.time}
           />
         );
       });
@@ -54,7 +55,7 @@ const PostComments = ({
   const [newCommentText, setnewCommentText] = useState("");
   const onCommentSubmit = () => {
     const newComment = (
-      <Comment key={100000} level={0} owner={owner} text={newCommentText} />
+      <Comment key={100000} level={0} owner={user} text={newCommentText} />
     );
     commentJsxList.unshift(newComment);
     setCommentsList(commentJsxList);
@@ -65,8 +66,7 @@ const PostComments = ({
         <div style={{ display: "flex", marginBottom: "10px" }}>
           <div className={styles.postComments__user_img_container}>
             <Image
-              src={`/images/${profilePhoto}`}
-              layout="responsive"
+              src={`/images/${user.profilePhoto}`}
               alt="user"
               width={50}
               height={50}

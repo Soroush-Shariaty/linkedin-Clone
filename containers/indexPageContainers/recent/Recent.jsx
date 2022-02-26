@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { FaUserFriends } from "react-icons/fa";
 import { RecentItem } from "../../../components/indexPageComponents/index";
+
 import styles from "../../../styles/indexPageStyles/recent.module.css";
 
 const Recent = () => {

@@ -1,20 +1,17 @@
-import { useEffect, useState } from "react";
 import { useTheme } from "next-themes";
 import { useSelector, useDispatch } from "react-redux";
 import { BsFillSunFill, BsFillMoonFill } from "react-icons/bs";
-import styles from "../../../styles/navbarStyles/toggleDarkmode.module.css";
 import {
   setThemeDark,
   setThemeLight,
 } from "../../../redux/actions/darkmodeActions";
+import styles from "../../../styles/navbarStyles/toggleDarkmode.module.css";
 
 const ToggleDarkmode = () => {
   const { theme, setTheme } = useTheme();
   const dispatch = useDispatch();
-  //check if system darkmode is enabled.
   const darkmodeState = useSelector((state) => state.darkmode);
   const triggerToggle = () => {
-    debugger;
     if (darkmodeState.darkmode) {
       dispatch(setThemeLight());
       setTheme("light");
