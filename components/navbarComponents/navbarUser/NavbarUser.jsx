@@ -5,10 +5,10 @@ import styles from "../../../styles/navbarStyles/navbarUser.module.css";
 import profile from "../../../public/images/User-img.jpg";
 import { useSelector } from "react-redux";
 
-const NavbarUser = () => {
+const NavbarUser = ({ onClick }) => {
   const user = useSelector((state) => state.user);
   return (
-    <div className={styles.navbarUser}>
+    <div className={styles.navbarUser} onClick={onClick}>
       <Image
         className={styles.navbarUser__image}
         width={30}

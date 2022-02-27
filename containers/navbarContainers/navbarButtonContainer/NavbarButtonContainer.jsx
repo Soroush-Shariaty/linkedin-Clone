@@ -1,3 +1,4 @@
+import { useState } from "react";
 import {
   AiFillHome,
   AiFillMessage,
@@ -16,6 +17,7 @@ import styles from "./../../../styles/navbarStyles/navbarButtonContainer.module.
 import { activeClass } from "./../../../utils/activeClassEnum";
 
 const NavbarButtonContainer = ({ active }) => {
+  const [isModalOpen, setIsModalOpen] = useState(false);
   return (
     <div className={styles.navbarButtonContainer}>
       <NavbarButton title="Search" isActive={false} href="/mynetwork">

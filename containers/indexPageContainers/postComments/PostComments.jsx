@@ -2,7 +2,10 @@ import { useState } from "react";
 import Image from "next/image";
 import TextareaAutosize from "react-textarea-autosize";
 import { useSelector } from "react-redux";
-import { Comment } from "../../../components/indexPageComponents/index";
+import {
+  Comment,
+  PostCommentInput,
+} from "../../../components/indexPageComponents/index";
 
 import styles from "../../../styles/indexPageStyles/postComments.module.css";
 
@@ -12,7 +15,6 @@ const PostComments = ({
   postOwner,
   postOwnerDescription,
 }) => {
-  const [showButton, setShowButton] = useState("");
   const user = useSelector((state) => state.user);
   let commentJsxList = [];
   comments.map((comment) => {
@@ -52,7 +54,7 @@ const PostComments = ({
     commentJsxList.push(replies);
   });
   const [commentsList, setCommentsList] = useState(commentJsxList);
-  const [newCommentText, setnewCommentText] = useState("");
+
   const onCommentSubmit = () => {
     const newComment = (
       <Comment key={100000} level={0} owner={user} text={newCommentText} />
@@ -62,37 +64,7 @@ const PostComments = ({
   };
   return (
     <div>
-      <div>
-        <div style={{ display: "flex", marginBottom: "10px" }}>
-          <div className={styles.postComments__user_img_container}>
-            <Image
-              src={`/images/${user.profilePhoto}`}
-              alt="user"
-              width={50}
-              height={50}
-              className={styles.postComments__user_img}
-            />
-          </div>
-          <TextareaAutosize
-            placeholder="Add a comment..."
-            className={styles.postComments__textarea}
-            maxRows={20}
-            value={newCommentText}
-            onChange={(event) => {
-              setShowButton(event.target.value);
-              setnewCommentText(event.target.value);
-            }}
-          />
-        </div>
-        <div style={showButton ? { display: "block" } : { display: "none" }}>
-          <button
-            onClick={onCommentSubmit}
-            className={styles.postComments__postButton}
-          >
-            Post
-          </button>
-        </div>
-      </div>
+      <PostCommentInput onCommentSubmit={onCommentSubmit} />
       <div>{commentsList}</div>
     </div>
   );
