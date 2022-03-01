@@ -6,6 +6,7 @@
   font-size: 13px;
   cursor: pointer;
   color: var(--dark-gray);
+  border-left: 1px solid var(--gray);
 }
 
 .navbarWork:hover {

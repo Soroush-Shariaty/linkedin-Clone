@@ -1,11 +1,17 @@
 import React from "react";
+import { useDispatch } from "react-redux";
+import { hideUserDropDown } from "../../redux/actions/userProfileDropdownActions";
 import styles from "../../styles/bodyContainer.module.css";
 
 const BodyContainer = ({ children, isMessagingPage }) => {
   const childrenArray = React.Children.toArray(children);
+  const dispatch = useDispatch();
   if (childrenArray.length > 2) {
     return (
-      <div className={[styles.bodyContainer, "section-padding"].join(" ")}>
+      <div
+        onClick={() => dispatch(hideUserDropDown())}
+        className={[styles.bodyContainer, "section-padding"].join(" ")}
+      >
         <div className={styles.bodyContainer__side_left}>
           {childrenArray[0]}
         </div>{" "}
