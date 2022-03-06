@@ -1,0 +1,84 @@
+.showcase {
+  border-radius: 10px;
+  overflow: hidden;
+  border: 1px solid var(--gray);
+  background-color: var(--white);
+}
+
+.showcase__backgroundPhoto {
+  width: 100%;
+  height: 200px;
+  background-position: center;
+  background-size: cover;
+}
+
+.showcase__container {
+  padding: 10px;
+  margin-top: -120px;
+}
+
+.showcase__profilePhoto {
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  border: 3px solid var(--white);
+}
+
+.showcase__userName {
+  margin: 5px 0;
+  padding: 0;
+  font-size: 22px;
+}
+
+.showcase__description {
+  margin: 5px 0;
+  padding: 0;
+  color: var(--dark-gray);
+  font-size: 18px;
+}
+
+.showcase__connections {
+  margin: 5px 0 10px 0;
+  padding: 0;
+  color: var(--blue);
+  font-family: var(--font-heading);
+}
+
+.showcase__openToBtn {
+  cursor: pointer;
+  outline: none;
+  border: none;
+  border-radius: 20px;
+  padding: 5px 15px;
+  font-size: 16px;
+  background-color: var(--blue);
+  font-family: var(--font-heading);
+  color: var(--white);
+}
+
+.showcase__addSectionBtn {
+  cursor: pointer;
+  margin: 0 10px;
+  border-radius: 20px;
+  padding: 5px 15px;
+  font-size: 16px;
+  outline: none;
+  border: none;
+  background-color: transparent;
+  font-family: var(--font-heading);
+  color: var(--blue);
+  border: 1px solid var(--blue);
+}
+
+.showcase__moreBtn {
+  cursor: pointer;
+  border-radius: 20px;
+  padding: 5px 15px;
+  font-size: 16px;
+  outline: none;
+  border: none;
+  background-color: transparent;
+  font-family: var(--font-heading);
+  color: var(--dark-gray);
+  border: 1px solid var(--dark-gray);
+}
