@@ -6,7 +6,11 @@ import styles from "../../../styles/modals/homePageModals/startPostVideoModal.mo
 const StartPostVideoModal = ({ isOpen, closeModal }) => {
   const [file, setfile] = useState("");
   return (
-    <Modal isOpen={isOpen} className={styles.startPostVideoModal}>
+    <Modal
+      isOpen={isOpen}
+      className={styles.startPostVideoModal}
+      onRequestClose={closeModal}
+    >
       <div className={styles.startPostVideoModal__headingContainer}>
         <p>Select/Edit your video</p>
         <div className={styles.startPostVideoModal__xbutton}>

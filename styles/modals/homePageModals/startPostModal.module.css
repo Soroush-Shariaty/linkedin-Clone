@@ -1,0 +1,124 @@
+.startPostModal {
+  width: 500px;
+  margin: 0 auto;
+  margin-top: 40px;
+  background-color: var(--white);
+  border: 1px solid var(--dark-gray);
+  border-radius: 10px;
+  color: var(--dark-gray);
+}
+
+.startPostModal__user_container {
+  display: flex;
+  align-items: center;
+  padding: 0 10px;
+  color: var(--dark);
+}
+
+.startPostModal__user_container_image {
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+}
+
+.startPostModal__user_container_details {
+  display: block !important;
+  margin-left: 10px;
+}
+
+.startPostModal textarea {
+  width: 100%;
+  font-size: 16px;
+  font-family: var(--font-text);
+  color: var(--dark);
+  outline: 0;
+  padding: 10px;
+  border: none;
+  resize: none;
+}
+
+.startPostModal p {
+  margin: 0;
+  padding: 0;
+  font-size: 20px;
+}
+
+.startPostModal__headingContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px;
+}
+
+.startPostModal__xbutton {
+  font-size: 25px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  padding: 5px;
+  cursor: pointer;
+}
+
+.startPostModal__img {
+  position: relative;
+  height: 300px;
+  overflow: scroll;
+}
+
+.startPostModal__xbutton:hover {
+  background-color: var(--gray);
+}
+
+.startPostModal__selectImage {
+  display: flex;
+  justify-content: center;
+  padding: 30px 0;
+  border-top: 1px solid var(--gray);
+  border-bottom: 1px solid var(--gray);
+}
+
+.startPostModal__selectImage label {
+  font-family: var(--font-heading);
+  padding: 5px;
+  border-radius: 5px;
+  cursor: pointer;
+  color: var(--blue);
+}
+
+.startPostModal__selectImage label:hover {
+  background-color: var(--light-blue);
+}
+
+.startPostModal__buttonsContainer {
+  display: flex;
+  justify-content: flex-end;
+  padding: 15px;
+}
+
+.startPostModal__button {
+  background-color: var(--white);
+  outline: 0;
+  border: 1px solid var(--blue);
+  font-family: var(--font-heading);
+  color: var(--blue);
+  font-size: 15px;
+  padding: 5px 15px;
+  width: 80px;
+  border-radius: 15px;
+  cursor: pointer;
+}
+
+.active:hover {
+  background-color: var(--light-blue);
+}
+
+.deactive {
+  color: var(--gray);
+  border: 0;
+  outline: auto;
+  cursor: default;
+}
+
+.startPostModal__button:first-of-type {
+  margin-right: 10px;
+}

@@ -7,7 +7,11 @@ import styles from "../../../styles/modals/homePageModals/startPostPhotoModal.mo
 const StartPostPhotoModal = ({ isOpen, closeModal }) => {
   const [file, setfile] = useState("");
   return (
-    <Modal isOpen={isOpen} className={styles.startPostPhotoModal}>
+    <Modal
+      isOpen={isOpen}
+      className={styles.startPostPhotoModal}
+      onRequestClose={closeModal}
+    >
       <div className={styles.startPostPhotoModal__headingContainer}>
         <p>Edit your photo</p>
         <div className={styles.startPostPhotoModal__xbutton}>
