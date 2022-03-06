@@ -30,7 +30,10 @@ const PostCommentInput = ({ onCommentSubmit }) => {
       </div>
       <div style={showButton ? { display: "block" } : { display: "none" }}>
         <button
-          onClick={onCommentSubmit}
+          onClick={() => {
+            onCommentSubmit(newCommentText);
+            setnewCommentText("");
+          }}
           className={styles.postCommentInput__postButton}
         >
           Post

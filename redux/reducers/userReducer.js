@@ -1,14 +1,14 @@
 import { LOGIN_USER, LOGOUT_USER } from "./../actions/types";
 
 const initialState = {
-  ID: 2,
-  profilePhoto: "Jane1.jpg",
-  description: "Freelance web developer",
-  name: "Jane Doe",
-  email: "jane@gmail.com",
+  ID: 5,
+  profilePhoto: "William.jpg",
+  description: "Assistant Professor",
+  name: "William Moore",
+  email: "william@gmail.com",
   password: "123456",
   isAdmin: false,
-  backgroundImage: "bg2.jpg",
+  backgroundImage: "bg4.jpg",
 };
 
 // ID: 0,

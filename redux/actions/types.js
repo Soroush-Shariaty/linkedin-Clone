@@ -3,6 +3,3 @@ export const SET_LIGHT_THEME = "SET_LIGHT_THEME";
 
 export const LOGIN_USER = "LOGIN_USER";
 export const LOGOUT_USER = "LOGOUT_USER";
-
-export const SHOW_USER_DROPDOWN = "SHOW_USER_DROPDOWN";
-export const HIDE_USER_DROPDOWN = "HIDE_USER_DROPDOWN";

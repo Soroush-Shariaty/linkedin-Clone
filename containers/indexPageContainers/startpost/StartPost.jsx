@@ -11,6 +11,7 @@ import { StartpostButton } from "../../../components/indexPageComponents/index";
 import {
   StartPostPhotoModal,
   StartPostVideoModal,
+  StartPostModal,
 } from "../../../modals/homePageModals/index";
 
 import styles from "../../../styles/indexPageStyles/startpost.module.css";
@@ -19,6 +20,7 @@ import userPic from "../../../public/images/User-img.jpg";
 const StartPost = () => {
   const [isPhotoModalOpen, setisPhotoModalOpen] = useState(false);
   const [isVideoModalOpen, setisVideoModalOpen] = useState(false);
+  const [isPostModalOpen, setisPostModalOpen] = useState(false);
   const user = useSelector((state) => state.user);
   return (
     <div className={styles.startPost}>
@@ -30,6 +32,10 @@ const StartPost = () => {
         isOpen={isVideoModalOpen}
         closeModal={() => setisVideoModalOpen(false)}
       />
+      <StartPostModal
+        isOpen={isPostModalOpen}
+        closeModal={() => setisPostModalOpen(false)}
+      />
       <div style={{ display: "flex", marginBottom: "10px" }}>
         <div className={styles.startPost__user_img_container}>
           <Image
@@ -40,7 +46,12 @@ const StartPost = () => {
             className={styles.startPost__user_img}
           />
         </div>
-        <button className={styles.startPost__btn}>Start a post</button>
+        <button
+          className={styles.startPost__btn}
+          onClick={() => setisPostModalOpen(true)}
+        >
+          Start a post
+        </button>
       </div>
       <div style={{ display: "flex", justifyContent: "space-between" }}>
         <StartpostButton

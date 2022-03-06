@@ -55,7 +55,7 @@ const PostComments = ({
   });
   const [commentsList, setCommentsList] = useState(commentJsxList);
 
-  const onCommentSubmit = () => {
+  const onCommentSubmit = (newCommentText) => {
     const newComment = (
       <Comment key={100000} level={0} owner={user} text={newCommentText} />
     );
