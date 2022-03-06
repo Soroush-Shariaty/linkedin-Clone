@@ -6,14 +6,12 @@ const Comment = ({ text, owner, level, time }) => {
   // console.log(owner);
   return (
     <div className={styles.comment} style={{ marginLeft: `${50 * level}px` }}>
-      <div className={styles.comment__owner_img_container}>
-        <img
-          className={styles.comment__owner_img}
-          src={`/images/${owner.profilePhoto}`}
-          alt=""
-        />
-      </div>
-      <div>
+      <img
+        className={styles.comment__owner_img}
+        src={`/images/${owner.profilePhoto}`}
+        alt=""
+      />
+      <div style={{ width: "100%" }}>
         <div className={styles.comment__container}>
           <div className={styles.comment__owner_info}>
             <div className={styles.comment__owner_info_name_container}>

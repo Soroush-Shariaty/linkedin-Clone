@@ -1,14 +1,15 @@
 .comment {
   margin-bottom: 10px;
   display: flex;
+  margin: 0 5px;
 }
 
 .comment__container {
+  display: block;
   border-radius: 0 10px 10px 10px;
   background-color: var(--gray);
   padding: 10px;
-  width: 100%;
-  margin-left: 5px;
+  width: 100% !important;
 }
 
 .comment__owner_img {
