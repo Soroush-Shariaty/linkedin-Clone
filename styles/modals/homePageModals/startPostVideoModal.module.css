@@ -4,7 +4,7 @@
   margin-top: 40px;
   background-color: var(--white);
   border: 1px solid var(--dark-gray);
-  border-radius: 10px;
+  border-radius: var(--border-radius-container);
   color: var(--dark-gray);
 }
 

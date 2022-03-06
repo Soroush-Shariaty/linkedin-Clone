@@ -3,6 +3,6 @@
   padding: 0 10px;
   border-radius: 10px;
   overflow: hidden;
-  border: 1px solid var(--gray);
+  border: var(--border-container);
   outline: 0;
 }

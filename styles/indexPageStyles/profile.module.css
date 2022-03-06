@@ -1,7 +1,7 @@
 .profile {
   background-color: var(--white);
-  border: 1px solid var(--gray);
-  border-radius: 10px;
+  border: var(--border-container);
+  border-radius: var(--border-radius-container);
   overflow: hidden;
   margin-bottom: 10px;
   position: relative;

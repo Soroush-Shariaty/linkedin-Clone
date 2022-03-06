@@ -9,7 +9,7 @@
   outline: 0;
   border: 0;
   border-top: 2px solid green;
-  border-bottom: 1px solid var(--gray);
+  border-bottom: var(--border-container);
   resize: none;
 }
 

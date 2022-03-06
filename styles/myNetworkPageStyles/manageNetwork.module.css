@@ -1,6 +1,6 @@
 .manageNetwork {
   background-color: var(--white);
-  border-radius: 10px;
+  border-radius: var(--border-radius-container);
   padding: 10px 0;
 }
 
@@ -51,14 +51,14 @@
   display: block;
   width: 100%;
   border-radius: 5px;
-  padding: 10px;
+  padding: var(--padding-container);
   border: 1px solid var(--dark-gray);
   background-color: var(--white);
 }
 
 .manageNetwork__addContact_container button {
   background-color: transparent;
-  border-radius: 20px;
+  border-radius: var(--border-radius-button);
   border: 1px solid var(--blue);
   outline: 0;
   color: var(--blue);

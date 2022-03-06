@@ -1,9 +1,9 @@
 .addtofeed {
   background-color: var(--white);
-  padding: 10px;
-  border-radius: 10px;
+  padding: var(--padding-container);
+  border-radius: var(--border-radius-container);
   overflow: hidden;
-  border: 1px solid var(--gray);
+  border: var(--border-container);
   margin-bottom: 10px;
   outline: 0;
 }

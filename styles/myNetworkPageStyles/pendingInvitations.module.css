@@ -1,8 +1,8 @@
 .pendingInvitations {
   background-color: var(--white);
-  padding: 0 10px;
-  border-radius: 10px;
-  border: 1px solid var(--gray);
+  padding: 0 var(--padding-container);
+  border-radius: var(--border-radius-container);
+  border: var(--border-container);
   outline: 0;
   border-bottom: 10px;
   display: flex;

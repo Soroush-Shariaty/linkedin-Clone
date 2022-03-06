@@ -1,7 +1,7 @@
 .showcase {
-  border-radius: 10px;
+  border-radius: var(--border-radius-container);
   overflow: hidden;
-  border: 1px solid var(--gray);
+  border: var(--border-container);
   background-color: var(--white);
 }
 
@@ -48,7 +48,7 @@
   cursor: pointer;
   outline: none;
   border: none;
-  border-radius: 20px;
+  border-radius: var(--border-radius-button);
   padding: 5px 15px;
   font-size: 16px;
   background-color: var(--blue);
@@ -59,7 +59,7 @@
 .showcase__addSectionBtn {
   cursor: pointer;
   margin: 0 10px;
-  border-radius: 20px;
+  border-radius: var(--border-radius-button);
   padding: 5px 15px;
   font-size: 16px;
   outline: none;
@@ -72,7 +72,7 @@
 
 .showcase__moreBtn {
   cursor: pointer;
-  border-radius: 20px;
+  border-radius: var(--border-radius-button);
   padding: 5px 15px;
   font-size: 16px;
   outline: none;

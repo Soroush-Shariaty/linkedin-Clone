@@ -30,7 +30,7 @@
   font-size: 15px;
   font-family: var(--font-heading);
   color: var(--dark-gray);
-  border-radius: 20px;
+  border-radius: var(--border-radius-button);
   padding: 10px 10px;
   border: 1px solid var(--dark-gray);
   background-color: var(--white);
