@@ -22,7 +22,7 @@ function NavbarUserDropdown({ isOpen, setIsOpen }) {
     >
       <div className={styles.navbarUser__dropDown__user_container}>
         <img
-          src={`images/${user.profilePhoto}`}
+          src={`/images/${user.profilePhoto}`}
           className={styles.navbarUser__dropDown__user_container_image}
           alt="user"
         />

@@ -3,6 +3,7 @@
   overflow: hidden;
   border: var(--border-container);
   background-color: var(--white);
+  margin-bottom: 10px;
 }
 
 .showcase__backgroundPhoto {
