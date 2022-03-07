@@ -1,0 +1,26 @@
+.analytics {
+  border: var(--border-container);
+  border-radius: var(--border-radius-container);
+  background-color: var(--white);
+  padding: var(--padding-container);
+}
+
+.analytics__title {
+  margin: 0;
+}
+
+.analytics__privateToYouContainer {
+  display: flex;
+  align-items: center;
+  color: var(--dark-gray);
+}
+
+.analytics__privateToYouContainer p {
+  margin-left: 5px;
+  margin: 0;
+}
+
+.analytics__itemContainer {
+  margin-top: 10px;
+  display: flex;
+}
