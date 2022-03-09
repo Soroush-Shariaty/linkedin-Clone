@@ -7,33 +7,35 @@ import {
   AiOutlineSnippets,
   AiOutlineSchedule,
 } from "react-icons/ai";
+import { useTranslation } from "react-i18next";
 import { ManageNetworkOption } from "../../../components/myNetworkPageComponents/index";
 
 const ManageNetworkOptionContainer = () => {
+  const { t } = useTranslation("mynetwork");
   return (
     <>
-      <ManageNetworkOption href={"#"} text="Connections" number={100}>
+      <ManageNetworkOption href={"#"} text={t("connections")} number={100}>
         <BsPeopleFill />
       </ManageNetworkOption>
-      <ManageNetworkOption href={"#"} text="Contacts" number={115}>
+      <ManageNetworkOption href={"#"} text={t("contacts")} number={115}>
         <AiFillContacts />
       </ManageNetworkOption>
-      <ManageNetworkOption href={"#"} text="People I Follow" number={3}>
+      <ManageNetworkOption href={"#"} text={t("people_i_follow")} number={3}>
         <AiOutlineUser />
       </ManageNetworkOption>
-      <ManageNetworkOption href={"#"} text="Groups" number={18}>
+      <ManageNetworkOption href={"#"} text={t("groups")} number={18}>
         <AiOutlineTeam />
       </ManageNetworkOption>
-      <ManageNetworkOption href={"#"} text="Events" number={2}>
+      <ManageNetworkOption href={"#"} text={t("events")} number={2}>
         <AiOutlineCalendar />
       </ManageNetworkOption>
-      <ManageNetworkOption href={"#"} text="Pages" number={6}>
+      <ManageNetworkOption href={"#"} text={t("pages")} number={6}>
         <AiOutlineSnippets />
       </ManageNetworkOption>
-      <ManageNetworkOption href={"#"} text="Newsletter" number={6}>
+      <ManageNetworkOption href={"#"} text={t("newsletter")} number={6}>
         <AiOutlineSchedule />
       </ManageNetworkOption>
-      <ManageNetworkOption href={"#"} text="Hashtags" number={1}>
+      <ManageNetworkOption href={"#"} text={t("hashtags")} number={1}>
         <BsHash />
       </ManageNetworkOption>
     </>

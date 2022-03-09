@@ -53,15 +53,14 @@
 }
 
 .profile__links {
-  padding: 0 10px;
+  padding: 0;
 }
 
 .profile__status {
   display: flex;
   justify-content: space-between;
-  padding-top: 13px;
-  padding-bottom: 13px;
   margin-bottom: 0;
+  padding: 13px 10px;
 }
 
 .profile__status:hover {
@@ -106,22 +105,11 @@
 }
 
 .profile__premium {
-  padding-top: 13px;
-  padding-bottom: 13px;
   cursor: pointer;
+  padding: 13px 10px;
 }
-
-.profile__premium:hover {
+.profile__premium_container:hover {
   background-color: var(--gray);
-  margin-left: -10px;
-  margin-right: -10px;
-}
-
-.profile__premium:hover .profile__premium_item {
-  margin-left: 10px;
-}
-.profile__premium:hover .profile__premium_item_bold {
-  margin-left: 10px;
 }
 
 .profile__premium_item {
@@ -139,9 +127,8 @@
 }
 
 .profile__my_Items {
-  padding-top: 13px;
-  padding-bottom: 13px;
   cursor: pointer;
+  padding: 13px 10px;
 }
 
 .profile__my_Items:hover {

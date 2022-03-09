@@ -1,21 +1,14 @@
 import Link from "next/link";
-import { useEffect, useState, useRef } from "react";
 import { useSelector, useDispatch } from "react-redux";
 import styles from "../../../styles/navbarStyles/navbarUserDropdown.module.css";
 import onClickOutside from "react-onclickoutside";
 
 function NavbarUserDropdown({ isOpen, setIsOpen }) {
   const user = useSelector((state) => state.user);
-  const menuRef = useRef(null);
-  const [listening, setListening] = useState(false);
-  const toggle = () => setIsOpen(!isOpen);
-
-  useEffect(() => console.log(menuRef));
   NavbarUserDropdown.handleClickOutside = () => setIsOpen(false);
   return (
     <div
       className={styles.navbarUser__dropDown}
-      ref={menuRef}
       style={{
         display: isOpen ? "block" : "none",
       }}

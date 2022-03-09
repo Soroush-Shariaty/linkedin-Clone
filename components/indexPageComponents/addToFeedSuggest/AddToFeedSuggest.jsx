@@ -1,10 +1,11 @@
 import Image from "next/image";
 import { FaPlus } from "react-icons/fa";
+import { useTranslation } from "react-i18next";
 
 import styles from "../../../styles/indexPageStyles/addToFeedSuggest.module.css";
 
 const AddToFeedSuggest = ({ image, name, description }) => {
-  console.log(name);
+  const { t } = useTranslation(["feed"]);
   return (
     <div className={styles.addToFeedSuggest}>
       <div style={{ display: "flex" }}>
@@ -22,7 +23,7 @@ const AddToFeedSuggest = ({ image, name, description }) => {
           <span>{description}</span>
           <button className={styles.addToFeedSuggest__btn}>
             <FaPlus />
-            <span>Follow</span>
+            <span>{t("follow")}</span>
           </button>
         </div>
       </div>

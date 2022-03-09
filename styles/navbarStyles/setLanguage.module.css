@@ -1,0 +1,15 @@
+.setLanguage {
+  cursor: pointer;
+}
+.setLanguage svg {
+  color: var(--dark-gray);
+}
+
+.setLanguage svg:nth-of-type(1) {
+  width: 28px;
+  height: 28px;
+}
+
+.setLanguage:hover svg {
+  color: var(--dark);
+}

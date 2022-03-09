@@ -1,0 +1,45 @@
+.setLanguageDropdown {
+  height: fit-content;
+  width: 150px;
+  position: absolute;
+  background-color: var(--white);
+  right: 0px;
+  top: 55px;
+  z-index: 3;
+  padding: 10px;
+  border-radius: 10px;
+  border: 1px solid var(--gray);
+}
+
+.setLanguageDropdown__button {
+  border: none;
+  outline: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: transparent;
+  padding: 5px 10px;
+  width: 100%;
+  outline: none;
+  font-family: var(--font-heading);
+  color: var(--dark-gray);
+  cursor: pointer;
+  margin: 5px 0;
+}
+
+.setLanguageDropdown__button:hover {
+  background-color: var(--gray);
+}
+.setLanguageDropdown__button img {
+  width: 20%;
+  height: 30%;
+}
+.setLanguageDropdown__button p {
+  margin: 0;
+}
+
+@media screen and (max-width: 855px) {
+  .navbarUser div {
+    display: none;
+  }
+}

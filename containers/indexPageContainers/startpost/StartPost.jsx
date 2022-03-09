@@ -16,11 +16,13 @@ import {
 
 import styles from "../../../styles/indexPageStyles/startpost.module.css";
 import userPic from "../../../public/images/User-img.jpg";
+import { useTranslation } from "react-i18next";
 
 const StartPost = () => {
   const [isPhotoModalOpen, setisPhotoModalOpen] = useState(false);
   const [isVideoModalOpen, setisVideoModalOpen] = useState(false);
   const [isPostModalOpen, setisPostModalOpen] = useState(false);
+  const { t } = useTranslation(["feed"]);
   const user = useSelector((state) => state.user);
   return (
     <div className={styles.startPost}>
@@ -50,28 +52,28 @@ const StartPost = () => {
           className={styles.startPost__btn}
           onClick={() => setisPostModalOpen(true)}
         >
-          Start a post
+          {t("start_a_post")}
         </button>
       </div>
       <div style={{ display: "flex", justifyContent: "space-between" }}>
         <StartpostButton
-          text="Photo"
+          text={t("photo")}
           color="#70b5f9"
           action={() => setisPhotoModalOpen(true)}
         >
           <AiFillPicture />
         </StartpostButton>
         <StartpostButton
-          text="Video"
+          text={t("video")}
           color="#7fc15e"
           action={() => setisVideoModalOpen(true)}
         >
           <AiFillPlaySquare />
         </StartpostButton>
-        <StartpostButton text="Event" color="#e7a33e">
+        <StartpostButton text={t("event")} color="#e7a33e">
           <AiFillCalendar />
         </StartpostButton>
-        <StartpostButton text="Write article" color="#e7a33e">
+        <StartpostButton text={t("write_article")} color="#e7a33e">
           <AiOutlinePicLeft />
         </StartpostButton>
       </div>

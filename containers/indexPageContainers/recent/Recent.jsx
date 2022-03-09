@@ -1,15 +1,17 @@
 import Link from "next/link";
+import { useTranslation } from "react-i18next";
 import { FaUserFriends } from "react-icons/fa";
 import { RecentItem } from "../../../components/indexPageComponents/index";
 
 import styles from "../../../styles/indexPageStyles/recent.module.css";
 
 const Recent = () => {
+  const { t } = useTranslation(["feed"]);
   return (
     <div>
       <div className={styles.recent}>
         <div>
-          <p className={styles.recent__title}>Recent</p>
+          <p className={styles.recent__title}>{t("recent")}</p>
           <RecentItem text="W3 Consertium" href="#">
             <FaUserFriends />
           </RecentItem>
@@ -22,7 +24,7 @@ const Recent = () => {
         </div>
         <div>
           <Link href="/groups" passHref>
-            <a className={styles.recent__groups}>Groups</a>
+            <a className={styles.recent__groups}>{t("groups")}</a>
           </Link>
           <RecentItem text="W3 Consertium" href="#">
             <FaUserFriends />
@@ -36,16 +38,15 @@ const Recent = () => {
         </div>
         <div className={styles.recent__event}>
           <a className={styles.recent__groups} href="#">
-            Event
+            {t("events")}
           </a>
-          <a className="event__link-icon fa fa-plus" href="#"></a>
         </div>
         <div>
           <a className={styles.recent__groups} href="#">
-            followed Hashtags
+            {t("followed_hashtags")}
           </a>
           <a className={styles.recent__discover} href="#">
-            Discover more
+            {t("discover_more")}
           </a>
         </div>
       </div>

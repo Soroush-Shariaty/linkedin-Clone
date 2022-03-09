@@ -1,12 +1,14 @@
 import ManageNetworkOptionContainer from "./../manageNetworkOptionContainer/ManageNetworkOptionContainer";
 import Image from "next/image";
 import Link from "next/link";
+import { useTranslation } from "react-i18next";
 import styles from "../../../styles/myNetworkPageStyles/manageNetwork.module.css";
 import img from "../../../public/images/dreamJob.jpg";
 const ManageNetwork = () => {
+  const { t } = useTranslation(["mynetwork"]);
   return (
     <div className={styles.manageNetwork}>
-      <p>Manage my network</p>
+      <p>{t("manage_my_network")}</p>
       <div className={styles.manageNetwork__options_container}>
         <ManageNetworkOptionContainer />
       </div>
@@ -14,22 +16,21 @@ const ManageNetwork = () => {
         <Image layout="responsive" src={img} alt="" />
       </div>
       <div className={styles.manageNetwork__addContact_container}>
-        <p>Add personal contacts</p>
+        <p>{t("add_personal_contacts")}</p>
         <p>
-          We’ll periodically import and store your contacts to help you and
-          others connect. You choose who to connect to and who to invite.
+          {t("Well_periodically_import_and_store_etc")}
           <a className={styles.manageNetwork__addContact_container_learn_more}>
-            Learn more
+            {t("learn_more")}
           </a>
         </p>
         <div className={styles.manageNetwork__input_container}>
           <input type="text" />
         </div>
-        <button>Continue</button>
+        <button>{t("continue")}</button>
         <div style={{ display: "flex", justifyContent: "center" }}>
           <Link href="" passHref>
             <a className={styles.manageNetwork__addContact_container_link}>
-              More options
+              {t("more_options")}
             </a>
           </Link>
         </div>

@@ -1,14 +1,19 @@
 import { FcAbout } from "react-icons/fc";
-import styles from "../../../styles/userPageStyles/suggestedForYou.module.css";
 import { AiFillEye } from "react-icons/ai";
+import { useTranslation } from "react-i18next";
+
+import styles from "../../../styles/userPageStyles/suggestedForYou.module.css";
 
 const SuggestedForYou = () => {
+  const { t } = useTranslation(["user"]);
   return (
     <div className={styles.suggestedForYou}>
-      <h3 className={styles.suggestedForYou__title}>Suggested for you</h3>
+      <h3 className={styles.suggestedForYou__title}>
+        {t("suggested_for_you")}
+      </h3>
       <div className={styles.suggestedForYou_privateToYouContainer}>
         <AiFillEye />
-        <p>Private to you</p>
+        <p>{t("private_to_you")}</p>
       </div>
       <div className={styles.suggestedForYou__progressContainer}>
         <progress max={7} value={6} />
@@ -20,15 +25,18 @@ const SuggestedForYou = () => {
         >
           <FcAbout />
           <h3>
-            Write a summary to highlight your personality or work experience
+            {t(
+              "write_a_summary_to_highlight_your_personality_or_work_experience"
+            )}
           </h3>
         </div>
         <p>
-          Members who include a summary receive up to 3.9 times as many profile
-          views.
+          {t(
+            "members_who_include_a_summary_receive_up_to_3.9_times_as_many_profile_views"
+          )}
         </p>
         <button className={styles.suggestedForYou__summaryContainer_btn}>
-          Add a summary
+          {t("add_a_summary")}
         </button>
       </div>
     </div>

@@ -1,4 +1,5 @@
 import { useRef, useState } from "react";
+import { useTranslation } from "react-i18next";
 import {
   AiFillHome,
   AiFillMessage,
@@ -17,36 +18,41 @@ import styles from "./../../../styles/navbarStyles/navbarButtonContainer.module.
 import { activeClass } from "./../../../utils/activeClassEnum";
 
 const NavbarButtonContainer = ({ active }) => {
+  const { t } = useTranslation(["feed"]);
   return (
     <div className={styles.navbarButtonContainer}>
       <NavbarButton title="Search" isActive={false} href="/mynetwork">
         <AiOutlineSearch />
       </NavbarButton>
       <NavbarButton
-        title="Home"
+        title={t("home")}
         isActive={active === activeClass.home ? true : false}
         href="/"
       >
         <AiFillHome />
       </NavbarButton>
       <NavbarButton
-        title="My Network"
+        title={t("my_network")}
         isActive={active === activeClass.myNetwork ? true : false}
         href="/mynetwork"
       >
         <BsPeopleFill />
       </NavbarButton>
-      <NavbarButton title="Jobs" isActive={false} href="/mynetwork">
+      <NavbarButton title={t("jobs")} isActive={false} href="/mynetwork">
         <IoMdBriefcase />
       </NavbarButton>
       <NavbarButton
-        title="Messaging"
+        title={t("messaging")}
         isActive={active === activeClass.messaging ? true : false}
         href="/messaging"
       >
         <AiFillMessage />
       </NavbarButton>
-      <NavbarButton title="Notification" isActive={false} href="/mynetwork">
+      <NavbarButton
+        title={t("notifications")}
+        isActive={false}
+        href="/mynetwork"
+      >
         <AiFillBell />
       </NavbarButton>
       <NavbarUser />

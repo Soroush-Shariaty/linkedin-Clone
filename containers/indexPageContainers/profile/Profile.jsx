@@ -3,10 +3,12 @@ import { useSelector } from "react-redux";
 import Link from "next/link";
 import styles from "../../../styles/indexPageStyles/profile.module.css";
 import userImage from "../../../public/images/User-img.jpg";
+import { useTranslation } from "react-i18next";
 // import bgImage from "../../../public/images/bg1.jpg";
 
 const Profile = () => {
   const user = useSelector((state) => state.user);
+  const { t } = useTranslation(["feed"]);
   return (
     <div className={styles.profile}>
       <div>
@@ -39,7 +41,7 @@ const Profile = () => {
         <Link href="/status">
           <div className={styles.profile__status}>
             <p className={styles.profile__status__item}>
-              Who viewed your profile
+              {t("who_viewed_your_profile")}
             </p>
             <p className={styles.profile__status__value}>25</p>
           </div>
@@ -47,9 +49,9 @@ const Profile = () => {
         <Link href="/connections">
           <div className={styles.profile__status}>
             <div>
-              <p className={styles.profile__status__item}>Connections</p>
+              <p className={styles.profile__status__item}>{t("connections")}</p>
               <p className={styles.profile__status__item_bold}>
-                Grow your network
+                {t("grow_your_network")}
               </p>
             </div>
             <p className={styles.profile__status__value}>178</p>
@@ -57,19 +59,21 @@ const Profile = () => {
         </Link>
         <hr className={styles.profile__horz_lines} />
         <Link href="/premium">
-          <div className={styles.profile__premium}>
-            <p className={styles.profile__premium_item}>
-              Access exclusive tools and insights
-            </p>
-            <p className={styles.profile__premium_item_bold}>
-              Try premium for free
-            </p>
+          <div className={styles.profile__premium_container}>
+            <div className={styles.profile__premium}>
+              <p className={styles.profile__premium_item}>
+                {t("access_exclusive_tools_and_insights")}
+              </p>
+              <p className={styles.profile__premium_item_bold}>
+                {t("try_premium_for_free")}
+              </p>
+            </div>
           </div>
         </Link>
         <hr className={styles.profile__horz_lines} />
         <Link href="/myitems">
           <div className={styles.profile__my_Items}>
-            <p className={styles.profile__my_Items__item}>My Items</p>
+            <p className={styles.profile__my_Items__item}>{t("my_items")}</p>
           </div>
         </Link>
       </div>

@@ -1,5 +1,7 @@
+import { useTranslation } from "react-i18next";
 import styles from "../../../styles/userPageStyles/showcase.module.css";
 const Showcase = ({ user }) => {
+  const { t } = useTranslation(["user"]);
   return (
     <div className={styles.showcase}>
       <div
@@ -15,12 +17,12 @@ const Showcase = ({ user }) => {
         />
         <h3 className={styles.showcase__userName}>{user.name}</h3>
         <p className={styles.showcase__description}>{user.description}</p>
-        <p className={styles.showcase__connections}>300 connections</p>
-        <button className={styles.showcase__openToBtn}>Open to</button>
+        <p className={styles.showcase__connections}>300 {t("connections")}</p>
+        <button className={styles.showcase__openToBtn}>{t("open_to")}</button>
         <button className={styles.showcase__addSectionBtn}>
-          Add profile section
+          {t("add_profile_section")}
         </button>
-        <button className={styles.showcase__moreBtn}>More</button>
+        <button className={styles.showcase__moreBtn}>{t("more")}</button>
       </div>
     </div>
   );

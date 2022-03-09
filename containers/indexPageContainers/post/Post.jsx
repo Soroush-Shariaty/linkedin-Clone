@@ -8,6 +8,7 @@ import {
   FaGlobeAmericas,
   FaThumbsUp,
 } from "react-icons/fa";
+import { useTranslation } from "react-i18next";
 import { MdThumbUpAlt } from "react-icons/md";
 import { PostButton } from "../../../components/indexPageComponents/index";
 import { PostComments } from "../index";
@@ -15,6 +16,7 @@ import { PostComments } from "../index";
 import styles from "../../../styles/indexPageStyles/post.module.css";
 
 const Post = ({ postDataItem }) => {
+  const { t } = useTranslation(["feed"]);
   const {
     description,
     likeCount,
@@ -99,19 +101,19 @@ const Post = ({ postDataItem }) => {
       <hr />
       <div className={styles.post__button_container}>
         <PostButton
-          text="Like"
+          text={t("like")}
           onClick={onLikeButtonClick}
           color={postLiked && "var(--like-button-blue)"}
         >
           {postLiked ? <FaThumbsUp /> : <FaRegThumbsUp />}
         </PostButton>
-        <PostButton text="Comment" onClick={onCommentButtonClick}>
+        <PostButton text={t("comment")} onClick={onCommentButtonClick}>
           <FaRegCommentDots />
         </PostButton>
-        <PostButton text="Share" onClick={() => {}}>
+        <PostButton text={t("share")} onClick={() => {}}>
           <FaShare />
         </PostButton>
-        <PostButton text="Send" onClick={() => {}}>
+        <PostButton text={t("send")} onClick={() => {}}>
           <FaPaperPlane />
         </PostButton>
       </div>

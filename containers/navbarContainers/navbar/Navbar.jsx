@@ -5,6 +5,7 @@ import {
 } from "../../../components/navbarComponents/index";
 
 import styles from "../../../styles/navbarStyles/navbar.module.css";
+import SetLanguage from "../../../components/navbarComponents/setlanguage/SetLanguage";
 
 const Navbar = ({ active }) => {
   return (
@@ -12,6 +13,7 @@ const Navbar = ({ active }) => {
       <div className={styles.navbar__searchbar_container}>
         <Searchbar />
         <ToggleDarkMode />
+        <SetLanguage />
       </div>
       <NavbarButtonContainer active={active} />
     </div>

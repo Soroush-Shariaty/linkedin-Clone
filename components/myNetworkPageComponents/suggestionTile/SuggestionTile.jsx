@@ -4,8 +4,10 @@ import Link from "next/link";
 import styles from "../../../styles/myNetworkPageStyles/suggestionTile.module.css";
 import userImage from "../../../public/images/User-img.jpg";
 import bgImage from "../../../public/images/bg1.jpg";
+import { useTranslation } from "react-i18next";
 
 const SuggestionTile = () => {
+  const { t } = useTranslation(["mynetwork"]);
   return (
     <div className={styles.suggestionTile}>
       <div>
@@ -36,10 +38,10 @@ const SuggestionTile = () => {
       </Link>
       <p className={styles.suggestionTile__description}>Front-End Developer</p>
       <button className={styles.suggestionTile__mutual}>
-        2 mutual connections
+        2 {t("mutual_connections")}
       </button>
       <div className={styles.suggestionTile__btnContainer}>
-        <button className={styles.suggestionTile__btn}>Connect</button>
+        <button className={styles.suggestionTile__btn}>{t("connect")}</button>
       </div>
     </div>
   );

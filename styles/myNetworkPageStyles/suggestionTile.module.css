@@ -80,3 +80,6 @@
   border-radius: var(--border-radius-button);
   padding: 5px 0;
 }
+.suggestionTile__btn:hover {
+  background-color: var(--light-blue);
+}
