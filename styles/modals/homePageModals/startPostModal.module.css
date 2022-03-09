@@ -59,14 +59,13 @@
   cursor: pointer;
 }
 
+.startPostModal__xbutton:hover {
+  background-color: var(--gray);
+}
 .startPostModal__img {
   position: relative;
   height: 300px;
   overflow: scroll;
-}
-
-.startPostModal__xbutton:hover {
-  background-color: var(--gray);
 }
 
 .startPostModal__selectImage {

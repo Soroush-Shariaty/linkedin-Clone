@@ -1,15 +1,23 @@
 import Image from "next/image";
 import Link from "next/link";
+import { useState } from "react";
+import { useTranslation } from "react-i18next";
+import { AiOutlineClose } from "react-icons/ai";
+import { BiCheck } from "react-icons/bi";
 
 import styles from "../../../styles/myNetworkPageStyles/suggestionTile.module.css";
 import userImage from "../../../public/images/User-img.jpg";
 import bgImage from "../../../public/images/bg1.jpg";
-import { useTranslation } from "react-i18next";
 
 const SuggestionTile = () => {
+  const [isButtonClicked, setIsButtonClicked] = useState(false);
+  const [isXbuttonClicked, setIsXbuttonClicked] = useState(false);
   const { t } = useTranslation(["mynetwork"]);
   return (
-    <div className={styles.suggestionTile}>
+    <div
+      className={styles.suggestionTile}
+      style={isXbuttonClicked ? { display: "none" } : { display: "block" }}
+    >
       <div>
         <div className={styles.suggestionTile__background_img_container}>
           <Image
@@ -19,6 +27,12 @@ const SuggestionTile = () => {
             objectFit="cover"
             layout="fill"
           />
+        </div>
+        <div
+          className={styles.suggestionTile__xbutton}
+          onClick={() => setIsXbuttonClicked(true)}
+        >
+          <AiOutlineClose />
         </div>
         <div className={styles.suggestionTile__user_img_container}>
           <Image
@@ -41,7 +55,22 @@ const SuggestionTile = () => {
         2 {t("mutual_connections")}
       </button>
       <div className={styles.suggestionTile__btnContainer}>
-        <button className={styles.suggestionTile__btn}>{t("connect")}</button>
+        <button
+          className={
+            isButtonClicked
+              ? styles.suggestionTile__btn_pending
+              : styles.suggestionTile__btn
+          }
+          onClick={() => setIsButtonClicked(!isButtonClicked)}
+        >
+          {isButtonClicked ? (
+            <p>
+              <BiCheck /> {t("pending")}
+            </p>
+          ) : (
+            t("connect")
+          )}
+        </button>
       </div>
     </div>
   );

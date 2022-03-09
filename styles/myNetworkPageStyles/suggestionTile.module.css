@@ -83,3 +83,49 @@
 .suggestionTile__btn:hover {
   background-color: var(--light-blue);
 }
+
+.suggestionTile__btn_pending {
+  background-color: transparent;
+  margin: 10px 0;
+  cursor: pointer;
+  width: 80%;
+  font-size: 16px;
+  border: 1px solid var(--dark-gray);
+  color: var(--dark-gray);
+  font-family: var(--font-heading);
+  border-radius: var(--border-radius-button);
+  padding: 5px 0;
+}
+.suggestionTile__btn_pending:hover {
+  background-color: var(--gray);
+}
+.suggestionTile__btn_pending p {
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.suggestionTile__btn_pending svg {
+  width: 22px;
+  height: 22px;
+}
+
+.suggestionTile__xbutton {
+  font-size: 17px;
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  padding: 5px;
+  cursor: pointer;
+  background-color: var(--gray);
+  opacity: 70%;
+}
+
+.suggestionTile__xbutton:hover {
+  background-color: var(--dark-gray);
+  color: var(--white);
+}
