@@ -16,6 +16,7 @@
   --border-radius-container: 10px;
   --border-radius-button: 20px;
   --padding-container: 10px;
+  --transition-dropDown: opacity 0.5s ease;
 }
 /* Silver Theme */
 [data-theme="dark"] {

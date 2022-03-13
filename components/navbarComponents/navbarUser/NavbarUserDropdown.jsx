@@ -10,7 +10,7 @@ function NavbarUserDropdown({ isOpen, setIsOpen }) {
     <div
       className={styles.navbarUser__dropDown}
       style={{
-        display: isOpen ? "block" : "none",
+        opacity: isOpen ? "1" : "0",
       }}
     >
       <div className={styles.navbarUser__dropDown__user_container}>

@@ -13,7 +13,7 @@ function SetLanguageDropdown({ isOpen, setIsOpen }) {
     <div
       className={styles.setLanguageDropdown}
       style={{
-        display: isOpen ? "block" : "none",
+        opacity: isOpen ? "1" : "0",
       }}
     >
       <button

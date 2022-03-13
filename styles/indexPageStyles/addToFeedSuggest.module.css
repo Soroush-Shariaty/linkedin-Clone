@@ -24,6 +24,7 @@
 .addToFeedSuggest__btn {
   width: 95px;
   margin: 5px 0;
+  height: 30px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -31,7 +32,7 @@
   font-family: var(--font-heading);
   color: var(--dark-gray);
   border-radius: var(--border-radius-button);
-  padding: 10px 10px;
+  padding: 5px 10px;
   border: 1px solid var(--dark-gray);
   background-color: var(--white);
   cursor: pointer;
