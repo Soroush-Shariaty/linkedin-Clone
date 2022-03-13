@@ -30,7 +30,7 @@ const Profile = () => {
           />
         </div>
       </div>
-      <Link href="/nowhere">
+      <Link href={`/users/${user.ID}`}>
         <a className={styles.profile__user_name}>
           <h4 className={styles.profile__user_name_text}>{user.name}</h4>
         </a>

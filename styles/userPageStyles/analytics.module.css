@@ -3,6 +3,7 @@
   border-radius: var(--border-radius-container);
   background-color: var(--white);
   padding: var(--padding-container);
+  margin-bottom: 10px;
 }
 
 .analytics__title {

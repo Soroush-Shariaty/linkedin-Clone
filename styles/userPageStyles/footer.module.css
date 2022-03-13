@@ -1,0 +1,25 @@
+.footer__img {
+  width: 10%;
+}
+
+.footer__links {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.footer__links a {
+  font-size: 14px;
+  color: var(--dark-gray);
+  display: inline-block;
+  margin: 2px 0;
+  font-family: var(--font-heading);
+}
+.footer__links a:hover {
+  color: var(--blue);
+  text-decoration: underline;
+}
+
+.footer p {
+  font-size: 12px;
+  color: var(--dark-gray);
+}

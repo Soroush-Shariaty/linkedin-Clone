@@ -4,6 +4,7 @@ import BodyContainer from "./../../containers/bodyContainer/BodyContainer";
 import Showcase from "../../containers/userPageContainers/showcase/Showcase";
 import SuggestedForYou from "../../containers/userPageContainers/suggestedForYou/SuggestedForYou";
 import Analytics from "../../containers/userPageContainers/analytics/Analytics";
+import Footer from "./../../containers/userPageContainers/footer/Footer";
 
 const UserPage = ({ user }) => {
   return (
@@ -14,6 +15,7 @@ const UserPage = ({ user }) => {
           <Showcase user={user} />
           <SuggestedForYou />
           <Analytics />
+          <Footer />
         </div>
         <div style={{ backgroundColor: "red" }}>Soroush</div>
       </BodyContainer>
