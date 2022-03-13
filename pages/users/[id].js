@@ -5,7 +5,8 @@ import Showcase from "../../containers/userPageContainers/showcase/Showcase";
 import SuggestedForYou from "../../containers/userPageContainers/suggestedForYou/SuggestedForYou";
 import Analytics from "../../containers/userPageContainers/analytics/Analytics";
 import Footer from "./../../containers/userPageContainers/footer/Footer";
-
+import EditAddProfile from "./../../containers/userPageContainers/editAddProfile/EditAddProfile";
+import { DreamJob } from "../../containers/indexPageContainers/index";
 const UserPage = ({ user }) => {
   return (
     <div>
@@ -17,7 +18,10 @@ const UserPage = ({ user }) => {
           <Analytics />
           <Footer />
         </div>
-        <div style={{ backgroundColor: "red" }}>Soroush</div>
+        <div>
+          <EditAddProfile />
+          <DreamJob />
+        </div>
       </BodyContainer>
     </div>
   );
