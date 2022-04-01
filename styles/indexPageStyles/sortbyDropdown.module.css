@@ -1,0 +1,44 @@
+.sortbyDropdown {
+  height: fit-content;
+  width: 150px;
+  position: absolute;
+  background-color: var(--white);
+  right: 0px;
+  top: 25px;
+  z-index: 3;
+  border-radius: 10px;
+  border: var(--border-container);
+  transition: var(--transition-dropDown);
+}
+
+.sortbyDropdown__button {
+  border: none;
+  outline: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: transparent;
+  padding: 10px;
+  width: 100%;
+  outline: none;
+  font-family: var(--font-heading);
+  color: var(--dark-gray);
+  cursor: pointer;
+}
+
+.sortbyDropdown__button:hover {
+  background-color: var(--gray);
+}
+.sortbyDropdown__button img {
+  width: 20%;
+  height: 30%;
+}
+.sortbyDropdown__button p {
+  margin: 0;
+}
+
+@media screen and (max-width: 855px) {
+  .navbarUser div {
+    display: none;
+  }
+}

@@ -2,18 +2,16 @@ import Link from "next/link";
 import styles from "../../../styles/navbarStyles/setLanguageDropdown.module.css";
 import onClickOutside from "react-onclickoutside";
 import { useState } from "react";
-import Gb from "../../../public/images/flags/gb.svg";
-import Fr from "../../../public/images/flags/fr.svg";
 import i18next from "i18next";
 
 function SetLanguageDropdown({ isOpen, setIsOpen }) {
   SetLanguageDropdown.handleClickOutside = () => setIsOpen(false);
-  const [forceUpdate, setForceUpdate] = useState(1);
   return (
     <div
       className={styles.setLanguageDropdown}
       style={{
         opacity: isOpen ? "1" : "0",
+        visibility: isOpen ? "visible" : "hidden",
       }}
     >
       <button

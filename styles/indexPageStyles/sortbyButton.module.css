@@ -1,0 +1,10 @@
+.sortbyButton {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  position: relative;
+}
+.sortbyButton p {
+  margin: 0;
+  font-size: 14px;
+}
