@@ -4,8 +4,9 @@ import { activeClass } from "./../utils/activeClassEnum";
 import ManageNetwork from "../containers/myNetworkPageContainers/manageNetwork/ManageNetwork";
 import PendingInvitations from "./../containers/myNetworkPageContainers/pendingInvitations/PendingInvitations";
 import YouMayKnow from "../containers/myNetworkPageContainers/youMayKnow/YouMayKnow";
+import { data } from "../utils/data";
 
-const MyNetworkPage = () => {
+const MyNetworkPage = ({ users }) => {
   return (
     <div>
       <Navbar active={activeClass.myNetwork} />
@@ -15,7 +16,7 @@ const MyNetworkPage = () => {
         </div>
         <div>
           <PendingInvitations />
-          <YouMayKnow />
+          <YouMayKnow users={users} />
         </div>
       </BodyContainer>
     </div>
@@ -23,3 +24,12 @@ const MyNetworkPage = () => {
 };
 
 export default MyNetworkPage;
+
+export const getStaticProps = () => {
+  const { users } = data;
+  return {
+    props: {
+      users,
+    },
+  };
+};

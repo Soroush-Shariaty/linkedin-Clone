@@ -6,10 +6,8 @@ import { AiOutlineClose } from "react-icons/ai";
 import { BiCheck } from "react-icons/bi";
 
 import styles from "../../../styles/myNetworkPageStyles/suggestionTile.module.css";
-import userImage from "../../../public/images/User-img.jpg";
-import bgImage from "../../../public/images/bg1.jpg";
 
-const SuggestionTile = () => {
+const SuggestionTile = ({ name, profilePhoto, job, backgroundImage }) => {
   const [isButtonClicked, setIsButtonClicked] = useState(false);
   const [isXbuttonClicked, setIsXbuttonClicked] = useState(false);
   const { t } = useTranslation(["mynetwork"]);
@@ -22,7 +20,7 @@ const SuggestionTile = () => {
         <div className={styles.suggestionTile__background_img_container}>
           <Image
             height={70}
-            src={bgImage}
+            src={`/images/${backgroundImage}`}
             alt="background"
             objectFit="cover"
             layout="fill"
@@ -37,7 +35,7 @@ const SuggestionTile = () => {
         <div className={styles.suggestionTile__user_img_container}>
           <Image
             className={styles.suggestionTile__user_img}
-            src={userImage}
+            src={`/images/${profilePhoto}`}
             alt="user"
             layout="fill"
           />
@@ -45,12 +43,10 @@ const SuggestionTile = () => {
       </div>
       <Link href="/nowhere">
         <a className={styles.suggestionTile__user_name}>
-          <h4 className={styles.suggestionTile__user_name_text}>
-            Soroush Shariaty
-          </h4>
+          <h4 className={styles.suggestionTile__user_name_text}>{name}</h4>
         </a>
       </Link>
-      <p className={styles.suggestionTile__description}>Front-End Developer</p>
+      <p className={styles.suggestionTile__description}>{job}</p>
       <button className={styles.suggestionTile__mutual}>
         2 {t("mutual_connections")}
       </button>

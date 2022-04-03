@@ -2,11 +2,9 @@ import Link from "next/link";
 import SuggestionTile from "../../../components/myNetworkPageComponents/suggestionTile/SuggestionTile";
 import styles from "../../../styles/myNetworkPageStyles/youMayKnow.module.css";
 import { useTranslation } from "react-i18next";
-const YouMayKnow = () => {
-  let arr = [];
-  for (let i = 0; i < 12; i++) {
-    arr.push(<SuggestionTile />);
-  }
+
+const YouMayKnow = ({ users }) => {
+  console.log(users);
   const { t } = useTranslation(["mynetwork"]);
   return (
     <div className={styles.youMayKnow}>
@@ -15,7 +13,15 @@ const YouMayKnow = () => {
         <button>{t("see_all")}</button>
       </div>
       <div className={styles.youMayKnow__connectSuggestionTiles}>
-        {arr.map((item) => item)}
+        {users.map((user) => (
+          <SuggestionTile
+            name={user.name}
+            profilePhoto={user.profilePhoto}
+            job={user.description}
+            backgroundImage={user.backgroundImage}
+            key={user.ID}
+          />
+        ))}
       </div>
     </div>
   );

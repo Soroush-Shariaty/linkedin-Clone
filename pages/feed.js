@@ -11,17 +11,8 @@ import DreamJob from "../containers/indexPageContainers/dreamJob/DreamJob";
 import { activeClass } from "../utils/activeClassEnum";
 import { data } from "../utils/data";
 import PostsContainer from "../containers/indexPageContainers/postsContainer/PostsContainer";
-import { useRouter } from "next/router";
-import { useEffect } from "react";
 
 const HomePage = ({ postDataList, addTofeedUsers }) => {
-  // const user = useSelector((state) => state.user);
-  // const router = useRouter();
-  // useEffect(() => {
-  //   if ((user.email = "")) {
-  //     router.push("/home");
-  //   }
-  // }, []);
   return (
     <div>
       <Navbar active={activeClass.home} />
