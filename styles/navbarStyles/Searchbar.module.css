@@ -34,7 +34,7 @@
   color: var(--dark-gray);
 }
 
-@media screen and (max-width: 1080px) {
+@media screen and (max-width: 1200px) {
   .searchbar__container {
     display: none;
   }

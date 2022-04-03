@@ -10,30 +10,20 @@
   display: none;
 }
 
-@media screen and (max-width: 1080px) {
+@media screen and (max-width: 1200px) {
   .navbarButtonContainer div:nth-child(1) {
     display: flex;
   }
 }
 
-@media screen and (max-width: 570px) {
+@media screen and (max-width: 768px) {
+  .navbarButtonContainer div:nth-child(5),
+  .navbarButtonContainer div:nth-child(6),
   .navbarButtonContainer div:nth-child(8),
   .navbarButtonContainer div:nth-child(7) {
     display: none;
   }
   .navbarButtonContainer div:last-child {
     display: flex;
-  }
-}
-
-@media screen and (max-width: 435px) {
-  .navbarButtonContainer div:nth-child(6) {
-    display: none;
-  }
-}
-
-@media screen and (max-width: 380px) {
-  .navbarButtonContainer div:nth-child(5) {
-    display: none;
   }
 }

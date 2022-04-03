@@ -12,7 +12,7 @@
   align-items: center;
 }
 
-@media screen and (max-width: 1080px) {
+@media screen and (max-width: 1200px) {
   .navbar {
     justify-content: flex-start;
   }

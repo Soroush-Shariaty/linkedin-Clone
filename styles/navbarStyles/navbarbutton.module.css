@@ -4,6 +4,7 @@
   align-items: center;
   padding: 0 15px;
   font-size: 13px;
+  text-align: center;
   cursor: pointer;
   color: var(--dark-gray);
 }
@@ -38,3 +39,9 @@
     border-bottom: none;
   }
 }
+/* @media screen and (max-width: 480px) {
+  .navbarButton span:nth-child(1) {
+    font-size: 20px;
+    line-height: 25px;
+  }
+} */
