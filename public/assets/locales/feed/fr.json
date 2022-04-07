@@ -31,5 +31,13 @@
   "search": "Recherche",
   "comment": "Commenter",
   "share": "Partager",
-  "send": "Envoyer"
+  "send": "Envoyer",
+  "view_profile": "Voir le profil",
+  "account": "Compte",
+  "settings_and_privacy": "Préférences et confidentialité",
+  "help": "Aide",
+  "language": "Langue",
+  "manage": "Gérer",
+  "posts_and_activities": "Posts et activités",
+  "sign_out": "Déconnexion"
 }

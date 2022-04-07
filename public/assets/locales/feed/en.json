@@ -31,5 +31,13 @@
   "search": "Search",
   "comment": "Comment",
   "share": "Share",
-  "send": "Send"
+  "send": "Send",
+  "view_profile": "View profile",
+  "account": "Account",
+  "settings_and_privacy": "Settings & privacy",
+  "help": "Help",
+  "language": "Language",
+  "manage": "Manage",
+  "posts_and_activities": "Posts & activities",
+  "sign_out": "Sign out"
 }

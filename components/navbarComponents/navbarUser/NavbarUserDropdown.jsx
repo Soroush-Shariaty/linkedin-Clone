@@ -2,9 +2,11 @@ import Link from "next/link";
 import { useSelector, useDispatch } from "react-redux";
 import styles from "../../../styles/navbarStyles/navbarUserDropdown.module.css";
 import onClickOutside from "react-onclickoutside";
+import { useTranslation } from "react-i18next";
 
 function NavbarUserDropdown({ isOpen, setIsOpen }) {
   const user = useSelector((state) => state.user);
+  const { t } = useTranslation("feed");
   NavbarUserDropdown.handleClickOutside = () => setIsOpen(false);
   return (
     <div
@@ -26,28 +28,28 @@ function NavbarUserDropdown({ isOpen, setIsOpen }) {
         </div>
       </div>
       <button className={styles.navbarUser__dropDown__user_container_button}>
-        View profile
+        <Link href={`/users/${user.ID}`}>{t("view_profile")}</Link>
       </button>
-      <h3>Account</h3>
+      <h3>{t("account")}</h3>
       <ul>
         <li>
-          <Link href={"/"}>Setting & Privacy</Link>
+          <Link href={"/"}>{t("settings_and_privacy")}</Link>
         </li>
         <li>
-          <Link href={"/"}>Help</Link>
+          <Link href={"/"}>{t("help")}</Link>
         </li>
         <li>
-          <Link href={"/"}>Language</Link>
+          <Link href={"/"}>{t("language")}</Link>
         </li>
       </ul>
-      <h3>Manage</h3>
+      <h3>{t("manage")}</h3>
       <ul>
         <li>
-          <Link href={"/"}>Posts & Activity</Link>
+          <Link href={"/"}>{t("posts_and_activities")}</Link>
         </li>
       </ul>
-      <Link href={"/"}>
-        <a>Sign Out</a>
+      <Link href={`/`}>
+        <a>{t("sign_out")}</a>
       </Link>
     </div>
   );

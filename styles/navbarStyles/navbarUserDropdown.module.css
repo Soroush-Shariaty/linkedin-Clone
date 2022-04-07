@@ -79,6 +79,15 @@
   color: var(--blue);
   cursor: pointer;
 }
+.navbarUser__dropDown__user_container_button:hover {
+  background-color: var(--light-blue);
+}
+.navbarUser__dropDown__user_container_button a {
+  text-align: center;
+}
+.navbarUser__dropDown__user_container_button a:hover {
+  text-decoration: none;
+}
 
 @media screen and (max-width: 855px) {
   .navbarUser div {
