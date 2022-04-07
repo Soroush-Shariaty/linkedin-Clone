@@ -38,26 +38,22 @@ const NavbarButtonContainer = ({ active }) => {
       >
         <BsPeopleFill />
       </NavbarButton>
-      <NavbarButton title={t("jobs")} isActive={false} href="/mynetwork">
+      <NavbarButton title={t("jobs")} isActive={false} href="/">
         <IoMdBriefcase />
       </NavbarButton>
       <NavbarButton
         title={t("messaging")}
         isActive={active === activeClass.messaging ? true : false}
-        href="/messaging"
+        href="/"
       >
         <AiFillMessage />
       </NavbarButton>
-      <NavbarButton
-        title={t("notifications")}
-        isActive={false}
-        href="/mynetwork"
-      >
+      <NavbarButton title={t("notifications")} isActive={false} href="/">
         <AiFillBell />
       </NavbarButton>
       <NavbarUser />
       <NavbarWork />
-      <NavbarButton title="" isActive={false} href="/mynetwork">
+      <NavbarButton title="" isActive={false} href="/">
         <BsThreeDots />
       </NavbarButton>
     </div>
