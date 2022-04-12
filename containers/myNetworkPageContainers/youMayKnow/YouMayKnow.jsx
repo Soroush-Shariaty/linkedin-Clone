@@ -19,6 +19,7 @@ const YouMayKnow = ({ users }) => {
             profilePhoto={user.profilePhoto}
             job={user.description}
             backgroundImage={user.backgroundImage}
+            userId={user.ID}
             key={user.ID}
           />
         ))}

@@ -7,7 +7,13 @@ import { BiCheck } from "react-icons/bi";
 
 import styles from "../../../styles/myNetworkPageStyles/suggestionTile.module.css";
 
-const SuggestionTile = ({ name, profilePhoto, job, backgroundImage }) => {
+const SuggestionTile = ({
+  name,
+  profilePhoto,
+  job,
+  backgroundImage,
+  userId,
+}) => {
   const [isButtonClicked, setIsButtonClicked] = useState(false);
   const [isXbuttonClicked, setIsXbuttonClicked] = useState(false);
   const { t } = useTranslation(["mynetwork"]);
@@ -41,7 +47,7 @@ const SuggestionTile = ({ name, profilePhoto, job, backgroundImage }) => {
           />
         </div>
       </div>
-      <Link href="/nowhere">
+      <Link href={`/users/${userId}`}>
         <a className={styles.suggestionTile__user_name}>
           <h4 className={styles.suggestionTile__user_name_text}>{name}</h4>
         </a>
