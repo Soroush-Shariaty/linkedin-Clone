@@ -6,7 +6,7 @@ import {
 import ChatSearchbar from "./../../../components/messagingPageComponents/chatSearchbar/ChatSearchbar";
 import ChatContactItem from "./../../../components/messagingPageComponents/chatContactItem/ChatContactItem";
 import styles from "../../../styles/messagingPageStyles/chatSystem.module.css";
-import Chatlog from "../../../components/messagingPageComponents/chatLog/Chatlog";
+// import Chatlog from "../../../components/messagingPageComponents/chatLog/Chatlog";
 import Chatbox from "./../../../components/messagingPageComponents/chatbox/Chatbox";
 const ChatSystem = () => {
   return (
@@ -65,7 +65,7 @@ const ChatSystem = () => {
         </div>
       </div>
       <div>
-        <Chatlog />
+        {/* <Chatlog /> */}
         <Chatbox />
       </div>
     </div>
