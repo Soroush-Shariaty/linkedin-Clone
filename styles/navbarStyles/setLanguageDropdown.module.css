@@ -39,8 +39,9 @@
   margin: 0;
 }
 
-@media screen and (max-width: 855px) {
-  .navbarUser div {
-    display: none;
+@media screen and (max-width: 520px) {
+  .setLanguageDropdown {
+    width: 120px;
+    padding: 7px;
   }
 }
