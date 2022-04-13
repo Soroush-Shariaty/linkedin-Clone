@@ -93,3 +93,28 @@
 .toggleDarkmode_checked .toggleDarkmode__toggle_circle {
   left: 27px;
 }
+
+@media screen and (max-width: 520px) {
+  .toggleDarkmode__container {
+    width: 40px;
+    height: 24px;
+    padding: 0;
+    border-radius: 30px;
+    background-color: var(--gray);
+    transition: all 0.2s ease;
+  }
+
+  .toggleDarkmode__toggle_check {
+    left: 8px;
+    color: var(--dark);
+  }
+
+  .toggleDarkmode__toggle_uncheck {
+    opacity: 1;
+    right: 8px;
+    color: var(--dark);
+  }
+  .toggleDarkmode_checked .toggleDarkmode__toggle_circle {
+    left: 18px;
+  }
+}

@@ -39,9 +39,35 @@
     border-bottom: none;
   }
 }
-/* @media screen and (max-width: 480px) {
+@media screen and (max-width: 520px) {
   .navbarButton span:nth-child(1) {
-    font-size: 20px;
+    font-size: 30px;
     line-height: 25px;
   }
-} */
+}
+@media screen and (max-width: 460px) {
+  .navbarButton span:nth-child(1) {
+    font-size: 25px;
+    line-height: 20px;
+  }
+}
+@media screen and (max-width: 420px) {
+  .navbarButton span:nth-child(1) {
+    font-size: 20px;
+    line-height: 15px;
+  }
+  .navbarButton {
+    padding: 0 12px;
+    font-size: 10px;
+  }
+}
+@media screen and (max-width: 360px) {
+  .navbarButton span:nth-child(1) {
+    font-size: 17px;
+    line-height: 12px;
+  }
+  .navbarButton {
+    padding: 0 9px;
+    font-size: 10px;
+  }
+}

@@ -16,3 +16,28 @@
 .setLanguage:hover svg {
   color: var(--dark);
 }
+
+@media screen and (max-width: 520px) {
+  .setLanguage svg:nth-of-type(1) {
+    width: 25px;
+    height: 25px;
+  }
+}
+@media screen and (max-width: 460px) {
+  .setLanguage svg:nth-of-type(1) {
+    width: 23px;
+    height: 23px;
+  }
+}
+@media screen and (max-width: 420px) {
+  .setLanguage svg:nth-of-type(1) {
+    width: 20px;
+    height: 20px;
+  }
+}
+@media screen and (max-width: 360px) {
+  .setLanguage svg:nth-of-type(1) {
+    width: 17px;
+    height: 17px;
+  }
+}
