@@ -28,3 +28,34 @@
   margin: 0;
   font-size: 15px;
 }
+
+@media screen and (max-width: 520px) {
+  .postButton div {
+    margin-right: 10px;
+    font-size: 22px;
+  }
+  .postButton p {
+    margin: 0;
+    font-size: 12px;
+  }
+}
+@media screen and (max-width: 420px) {
+  .postButton div {
+    margin-right: 8px;
+    font-size: 20px;
+  }
+  .postButton p {
+    margin: 0;
+    font-size: 12px;
+  }
+}
+@media screen and (max-width: 360px) {
+  .postButton div {
+    margin-right: 8px;
+    font-size: 18px;
+  }
+  .postButton p {
+    margin: 0;
+    font-size: 10px;
+  }
+}

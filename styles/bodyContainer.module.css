@@ -50,5 +50,25 @@
 @media screen and (max-width: 855px) {
   .bodyContainer {
     display: block;
+    width: 100%;
+  }
+  .bodyContainer__side_left {
+    margin-right: 0px;
+  }
+
+  .bodyContainer__main {
+    margin: 0;
+  }
+
+  .bodyContainer__side_right {
+    margin-left: 0px;
+  }
+
+  .bodyContainer__section_left {
+    margin-right: 0px;
+  }
+
+  .bodyContainer__section_right {
+    margin-left: 0px;
   }
 }
